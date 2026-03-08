@@ -9,9 +9,10 @@ interface Props {
   canonical?: string;
   schema?: object[];
   ogImage?: string;
+  keywords?: string[];
 }
 
-const { title, description, canonical, schema = [], ogImage } = Astro.props;
+const { title, description, canonical, schema = [], ogImage, keywords = [] } = Astro.props;
 const siteUrl = 'https://morebetterlabs.com';
 const canonicalUrl = canonical ? `${siteUrl}${canonical}` : Astro.url.href;
 const ogImageUrl = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/og-image.png`;
@@ -61,8 +62,11 @@ const organizationSchema = {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap.xml" />
 
+    {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+
     <!-- Performance -->
     <link rel="dns-prefetch" href="https://www.ruzuku.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <meta name="theme-color" content="#0f766e" />
 
     <!-- Open Graph -->
@@ -90,5 +94,22 @@ const organizationSchema = {
       <slot />
     </main>
     <Footer />
+    <!-- GA4 — deferred to avoid blocking page load -->
+    <script is:inline>
+      if (typeof requestIdleCallback === 'function') {
+        requestIdleCallback(function () {
+          var s = document.createElement('script');
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+          s.async = true;
+          document.head.appendChild(s);
+          s.onload = function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+          };
+        }, {timeout: 3000});
+      }
+    </script>
   </body>
 </html>

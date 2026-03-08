@@ -96,6 +96,41 @@ I wrote about this extensively in [*The Business of Courses*](https://www.amazon
 
 For practical frameworks on course design, pricing, and launch strategy grounded in these principles, the [free chapter summaries on Ruzuku](https://www.ruzuku.com/learn/book) cover the key insights.
 
+## Defining What Success Looks Like: Know, Feel, Do
+
+Before applying these principles, you need clarity on what you're designing *toward*. In my World Class Courses workshop, I teach a framework adapted from Yale's instructional design tradition: **Know, Feel, Do**.
+
+For each course, define three dimensions of success:
+
+- **Know**: What will your students understand? What knowledge will they retain?
+- **Feel**: What emotional state will they achieve? Confidence? Clarity? Relief? Motivation?
+- **Do**: What will they be able to *do* that they couldn't do before?
+
+Most course creators focus only on "Know." But Knowles' principles make clear why the other two dimensions matter as much — "Feel" connects to internal motivation (principle 6), and "Do" connects to problem-centered orientation (principle 5) and readiness to learn (principle 4). The "Feel" and "Do" dimensions are where real transformation happens — and where premium pricing is justified.
+
+### The Dream Exercise
+
+To sharpen your outcomes, try this visualization:
+
+> "Imagine that you have a group of dream students. They are engaged, they are perfectly behaved, and they have perfect memories. Fill in this sentence: **3-5 years from now, my students still know... Or they still are able to do... Or they still find value in...**"
+
+The 3-5 year timeframe is deliberate. It forces you to identify durable outcomes — not what students will remember from Module 3, but what will still be shaping their practice years later. This shifts the designer's thinking from "what content do I need to deliver?" to "what lasting change am I creating?"
+
+### Making Outcomes Measurable
+
+Once you've envisioned success, make it verifiable: "How will we know whether our students have achieved the outcomes — or not?"
+
+The criteria don't need to be numeric, but they need to be *observable*:
+
+| Course Type | Measurable Criterion |
+|-------------|---------------------|
+| Stress reduction | Self-assessment score improves within 8 weeks |
+| Novel writing | At least 5,000 words written + outline for the rest |
+| Facebook ads | 10% improvement in leads from ads |
+| Coaching certification | Successfully conduct 3 supervised sessions |
+
+"Students will feel more confident" is not measurable. "Students will pitch their services to 3 new prospects" is. This rigor — borrowed from Wiggins & McTighe's Understanding by Design framework (2005) — is what connects andragogy to outcomes that adults actually care about. For a practical tool to turn outcomes into course structure, see Ruzuku's [course outline generator](https://www.ruzuku.com/tools/course-outline).
+
 ## Putting It All Together
 
 Andragogy isn't a set of abstract principles. It's a design specification. Every Knowles principle maps to a concrete design decision:
@@ -108,6 +143,8 @@ Andragogy isn't a set of abstract principles. It's a design specification. Every
 | Readiness | Frame content around current, real problems |
 | Problem-Centered | Organize by challenge, not by topic |
 | Internal Motivation | Frame outcomes around personal transformation, not information transfer |
+
+And these principles connect to a concrete design process: define your Know-Feel-Do outcomes, make them measurable, and then design each module to move students toward those outcomes using the six andragogical principles as your guide.
 
 The best online courses for adults aren't the ones with the most content or the highest production values. They're the ones that respect how adults actually learn — and design every element around that reality.
 
@@ -130,3 +167,4 @@ The best online courses for adults aren't the ones with the most content or the 
 - Knowles, M. S. (1980). *The modern practice of adult education: From pedagogy to andragogy*. Cambridge Adult Education.
 - Kolb, D. A. (1984). *Experiential learning: Experience as the source of learning and development*. Prentice-Hall.
 - Merriam, S. B. (2001). Andragogy and self-directed learning: Pillars of adult learning theory. *New Directions for Adult and Continuing Education*, 89, 3-14.
+- Wiggins, G., & McTighe, J. (2005). *Understanding by Design* (2nd ed.). Association for Supervision and Curriculum Development.

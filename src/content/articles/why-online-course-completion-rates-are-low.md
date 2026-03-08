@@ -88,6 +88,38 @@ This is exactly the gap I set out to close when building Ruzuku. My research at 
 
 Ruzuku's [step-by-step course flow, built-in discussions, and structured activities](https://www.ruzuku.com/features) aren't feature additions to a content management system. They're the core architecture — designed to embody the research on what makes learning work.
 
+## The Accountability Gap
+
+The five design principles above address the learning experience itself. But there's a sixth factor that operates outside the content: **accountability**.
+
+A more specific completion statistic sharpens the point: "Among all MOOC participants, 3.13 percent completed their courses in 2017-18" (Inside Higher Ed, 2019). Three percent. That's the default when there's no human connection, no structured support, and no one who notices if you stop.
+
+In my World Class Courses workshop, I teach accountability as a design layer — something you build on top of the learning experience, not something you hope students will provide for themselves.
+
+### Peer Accountability Structures
+
+The simplest intervention: pair students up. But the design matters. "Find an accountability partner" doesn't work because the biggest barrier to peer accountability isn't willingness — it's logistics. Instead, assign partners, provide a specific agenda for weekly check-ins, and give them materials that structure the conversation. "Here's your partner. Here's the 15-minute agenda. Here's what to discuss this week."
+
+More formal versions include mastermind groups (structured peer learning with rotating hot seats) and peer review mechanisms (students review each other's work using provided rubrics). Peer review is especially powerful because it creates reciprocal commitment — someone is counting on your feedback, which means you stay engaged.
+
+### Professional Facilitation
+
+For higher-touch programs, professional facilitation means proactive monitoring and outreach. Track engagement data through the course platform. When someone misses two consecutive activities, reach out directly. Schedule brief coaching sessions for students who are stuck. The instructor's role shifts from content deliverer to progress facilitator.
+
+[Cohort-based course structures](https://www.ruzuku.com/use-cases/cohort-courses) naturally support accountability because they combine scheduled pacing, peer interaction, and instructor presence — all of which the research identifies as completion drivers.
+
+### The Iterative Design Approach
+
+There's one more insight that connects accountability to course design at a broader level. In my workshop, I tell participants:
+
+> "You don't feel comfortable teaching the course until the 3rd time you run it."
+
+This is permission-giving and strategic. Your first version will be rough. Your second version will be better because you've seen where students actually struggle. By the third iteration, you understand the real completion barriers in your specific course and can design around them.
+
+This means: don't over-invest in polished content before you've validated the learning design. Run a small pilot. See where people drop off. Add accountability structures where they're needed. Then refine. The courses with the highest completion rates aren't the ones that were perfectly designed from day one — they're the ones that were iteratively improved based on real student behavior.
+
+For a practical framework for running pilots, see Ruzuku's guide to [pilot course structure](https://www.ruzuku.com/learn/articles/pilot-course-structure) and the [pilot-to-full-course](https://www.ruzuku.com/learn/articles/pilot-to-full-course) transition.
+
 ## What This Means for Course Creators
 
 If you're building a course and want to design for completion:
@@ -97,10 +129,12 @@ If you're building a course and want to design for completion:
 3. **Build in discussion.** Even asynchronous discussion threads meaningfully increase engagement and completion.
 4. **Provide feedback.** Instructor comments, peer review, self-reflection prompts — anything that tells students how they're doing.
 5. **Make progress visible.** Show students where they are and how far they've come.
+6. **Design accountability into the structure.** Peer partners, cohort pacing, proactive facilitation — don't leave persistence to willpower alone.
+7. **Plan to iterate.** Your first version won't be your best. Run a pilot, observe where students struggle, and redesign around the real barriers.
 
 For practical frameworks on implementing each of these, Ruzuku's [course creation resources](https://www.ruzuku.com/learn) translate learning science into step-by-step guides for course creators.
 
-The completion rate problem is real. But it's a design problem, not a medium problem. Design for how people actually learn, and the numbers look very different.
+The completion rate problem is real. But it's a design problem, not a medium problem. Design for how people actually learn — and build in the accountability structures that sustain them — and the numbers look very different.
 
 ---
 
