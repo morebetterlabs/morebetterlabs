@@ -2,39 +2,39 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="border-t border-stone-200 bg-stone-50 py-12">
-  <div class="max-w-5xl mx-auto px-4">
-    <div class="grid gap-8 sm:grid-cols-3">
+<footer style={`border-top: 1px solid hsl(185 8% 14%); background: hsl(185 10% 5%);`} class="py-16">
+  <div class="max-w-[680px] mx-auto px-5">
+    <div class="grid gap-10 sm:grid-cols-3">
       <!-- Brand -->
       <div>
-        <a href="/" class="font-serif text-lg font-bold text-slate-900">MoreBetterLabs</a>
-        <p class="mt-2 text-sm text-slate-500">
+        <a href="/" class="font-serif text-base font-bold" style="color: hsl(170 5% 90%);">MoreBetterLabs</a>
+        <p class="mt-3 text-sm leading-relaxed" style="color: hsl(170 5% 40%);">
           Learning design research and practice by Abe Crystal, PhD.
         </p>
       </div>
 
       <!-- Navigation -->
       <div>
-        <h3 class="text-sm font-semibold text-slate-700 mb-3">Explore</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="/learning-design/" class="text-slate-500 hover:text-teal-700 transition-colors">Learning Design</a></li>
-          <li><a href="/about/" class="text-slate-500 hover:text-teal-700 transition-colors">About</a></li>
-          <li><a href="/projects/" class="text-slate-500 hover:text-teal-700 transition-colors">Projects</a></li>
+        <h3 class="text-xs font-semibold uppercase tracking-wider mb-4" style="color: hsl(170 5% 45%);">Explore</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="/learning-design/" class="transition-colors" style="color: hsl(170 5% 55%);" onmouseover="this.style.color='hsl(170 60% 60%)'" onmouseout="this.style.color='hsl(170 5% 55%)'">Articles</a></li>
+          <li><a href="/about/" class="transition-colors" style="color: hsl(170 5% 55%);" onmouseover="this.style.color='hsl(170 60% 60%)'" onmouseout="this.style.color='hsl(170 5% 55%)'">About</a></li>
+          <li><a href="/projects/" class="transition-colors" style="color: hsl(170 5% 55%);" onmouseover="this.style.color='hsl(170 60% 60%)'" onmouseout="this.style.color='hsl(170 5% 55%)'">Projects</a></li>
         </ul>
       </div>
 
-      <!-- Ruzuku -->
+      <!-- Links -->
       <div>
-        <h3 class="text-sm font-semibold text-slate-700 mb-3">From MoreBetterLabs</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="https://www.ruzuku.com" class="text-slate-500 hover:text-teal-700 transition-colors" rel="noopener">Ruzuku &mdash; Online Course Platform</a></li>
-          <li><a href="https://www.ruzuku.com/learn" class="text-slate-500 hover:text-teal-700 transition-colors" rel="noopener">Course Creation Resources</a></li>
-          <li><a href="https://www.amazon.com/Business-Courses-Abe-Crystal/dp/1737374218" class="text-slate-500 hover:text-teal-700 transition-colors" rel="noopener noreferrer">The Business of Courses</a></li>
+        <h3 class="text-xs font-semibold uppercase tracking-wider mb-4" style="color: hsl(170 5% 45%);">From MBL</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="https://www.ruzuku.com" class="transition-colors" style="color: hsl(170 5% 55%);" onmouseover="this.style.color='hsl(170 60% 60%)'" onmouseout="this.style.color='hsl(170 5% 55%)'" rel="noopener">Ruzuku</a></li>
+          <li><a href="https://www.ruzuku.com/learn" class="transition-colors" style="color: hsl(170 5% 55%);" onmouseover="this.style.color='hsl(170 60% 60%)'" onmouseout="this.style.color='hsl(170 5% 55%)'" rel="noopener">Course Creation Resources</a></li>
+          <li><a href="https://www.amazon.com/Business-Courses-Abe-Crystal/dp/1737374218" class="transition-colors" style="color: hsl(170 5% 55%);" onmouseover="this.style.color='hsl(170 60% 60%)'" onmouseout="this.style.color='hsl(170 5% 55%)'" rel="noopener noreferrer">The Business of Courses</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="mt-10 pt-6 border-t border-stone-200 text-xs text-slate-400">
+    <div class="mt-12 pt-6 text-xs" style={`border-top: 1px solid hsl(185 8% 12%); color: hsl(170 5% 30%);`}>
       &copy; {currentYear} MoreBetterLabs. All rights reserved.
     </div>
   </div>

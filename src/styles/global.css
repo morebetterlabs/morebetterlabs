@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --bg-primary: 185 10% 6%;
+    --bg-secondary: 185 8% 10%;
+    --bg-surface: 185 8% 14%;
+    --bg-elevated: 185 8% 18%;
+    --text-primary: 170 5% 90%;
+    --text-secondary: 170 5% 65%;
+    --text-muted: 170 5% 45%;
+    --accent: 170 60% 50%;
+    --accent-bright: 170 70% 60%;
+    --border: 185 8% 16%;
+    --border-light: 185 8% 20%;
+  }
+
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -10,36 +24,163 @@
   }
 
   body {
-    @apply bg-white text-slate-600;
+    background-color: hsl(var(--bg-primary));
+    color: hsl(var(--text-secondary));
+    line-height: 1.7;
   }
 
-  h1, h2, h3 {
-    @apply text-slate-900;
+  h1, h2, h3, h4 {
+    color: hsl(var(--text-primary));
+    line-height: 1.3;
+  }
+
+  ::selection {
+    background: hsl(var(--accent) / 0.3);
+    color: hsl(var(--text-primary));
+  }
+
+  a {
+    transition: color 150ms ease;
   }
 }
 
 @layer components {
   .prose-mbl {
-    @apply prose prose-slate max-w-none;
-    @apply prose-headings:font-serif prose-headings:text-slate-900;
-    @apply prose-a:text-teal-700 prose-a:underline prose-a:decoration-teal-300 hover:prose-a:text-teal-800 hover:prose-a:decoration-teal-500;
-    @apply prose-blockquote:border-teal-300 prose-blockquote:text-slate-700;
-    @apply prose-strong:text-slate-800;
+    @apply max-w-none;
+    color: hsl(var(--text-secondary));
+    font-size: 1.0625rem;
+    line-height: 1.8;
+  }
+
+  .prose-mbl h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: hsl(var(--text-primary));
+    font-size: 1.625rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose-mbl h3 {
+    color: hsl(var(--text-primary));
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .prose-mbl p {
+    margin-bottom: 1.25rem;
+  }
+
+  .prose-mbl a {
+    color: hsl(var(--accent-bright));
+    text-decoration: underline;
+    text-decoration-color: hsl(var(--accent) / 0.4);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 150ms ease;
+  }
+
+  .prose-mbl a:hover {
+    text-decoration-color: hsl(var(--accent-bright));
+  }
+
+  .prose-mbl strong {
+    color: hsl(var(--text-primary));
+    font-weight: 600;
+  }
+
+  .prose-mbl em {
+    font-style: italic;
+  }
+
+  .prose-mbl ul, .prose-mbl ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+  }
+
+  .prose-mbl ul {
+    list-style-type: disc;
+  }
+
+  .prose-mbl ol {
+    list-style-type: decimal;
+  }
+
+  .prose-mbl li {
+    margin-bottom: 0.5rem;
+  }
+
+  .prose-mbl blockquote {
+    border-left: 3px solid hsl(var(--accent) / 0.5);
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    color: hsl(var(--text-secondary));
+    font-style: italic;
+  }
+
+  .prose-mbl hr {
+    border-color: hsl(var(--border));
+    margin: 2.5rem 0;
+  }
+
+  .prose-mbl table {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-collapse: collapse;
+  }
+
+  .prose-mbl th {
+    color: hsl(var(--text-primary));
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid hsl(var(--border-light));
+    font-size: 0.875rem;
+  }
+
+  .prose-mbl td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid hsl(var(--border));
+    font-size: 0.9375rem;
   }
 
   .callout {
-    @apply rounded-xl border border-teal-200 bg-teal-50/50 p-6 my-8;
+    border: 1px solid hsl(var(--accent) / 0.25);
+    background: hsl(var(--accent) / 0.06);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin: 2.5rem 0;
   }
 
   .callout-title {
-    @apply font-serif text-lg font-bold text-teal-900 mb-2;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: hsl(var(--accent-bright));
+    margin-bottom: 0.5rem;
+  }
+
+  .callout a {
+    color: hsl(var(--accent-bright));
+    text-decoration: underline;
+    text-decoration-color: hsl(var(--accent) / 0.4);
+    text-underline-offset: 3px;
+  }
+
+  .callout a:hover {
+    text-decoration-color: hsl(var(--accent-bright));
   }
 
   .reference-list {
-    @apply text-sm text-slate-500 border-t border-slate-200 pt-6 mt-10;
+    font-size: 0.875rem;
+    color: hsl(var(--text-muted));
+    border-top: 1px solid hsl(var(--border));
+    padding-top: 1.5rem;
+    margin-top: 2.5rem;
   }
 
   .reference-list li {
-    @apply mb-2;
+    margin-bottom: 0.5rem;
   }
 }

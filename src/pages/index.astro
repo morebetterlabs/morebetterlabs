@@ -22,41 +22,32 @@ const websiteSchema = {
   schema={[websiteSchema]}
 >
   <!-- Hero -->
-  <section class="bg-stone-50 border-b border-stone-200 py-20 sm:py-28">
-    <div class="max-w-3xl mx-auto px-4">
-      <p class="text-sm font-medium text-teal-700 mb-4">MoreBetterLabs</p>
-      <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
-        Better Learning Design,<br/>Better Outcomes
+  <section class="pt-20 pb-16 sm:pt-28 sm:pb-20">
+    <div class="max-w-[680px] mx-auto px-5">
+      <p class="text-sm font-medium mb-5" style="color: hsl(170 60% 50%);">MoreBetterLabs</p>
+      <h1 class="font-serif text-4xl sm:text-5xl font-bold leading-tight mb-6" style="color: hsl(170 5% 95%);">
+        Better Learning Design,<br class="hidden sm:block"/> Better Outcomes
       </h1>
-      <p class="text-xl text-slate-500 leading-relaxed max-w-2xl mb-8">
-        Research-backed insights on designing online learning experiences that actually work.
-        By <a href="/about/" class="text-teal-700 underline decoration-teal-300 hover:decoration-teal-500">Abe Crystal, PhD</a> — learning design researcher,
-        course platform builder, and educator at UNC-Chapel Hill, NC State, and UCLA.
+      <p class="text-lg leading-relaxed max-w-xl" style="color: hsl(170 5% 55%);">
+        Research-backed insights on designing online learning that actually works.
+        By <a href="/about/" class="underline underline-offset-3" style="color: hsl(170 60% 60%); text-decoration-color: hsl(170 60% 50% / 0.4);">Abe Crystal, PhD</a> — learning design researcher
+        and educator at UNC-Chapel Hill, NC State, and UCLA.
       </p>
-      <div class="flex gap-4">
-        <a href="/learning-design/" class="inline-flex items-center px-5 py-2.5 bg-teal-700 text-white text-sm font-medium rounded-lg hover:bg-teal-800 transition-colors">
-          Explore Articles
-        </a>
-        <a href="/about/" class="inline-flex items-center px-5 py-2.5 border border-stone-300 text-slate-700 text-sm font-medium rounded-lg hover:border-teal-300 hover:text-teal-700 transition-colors">
-          About Abe
-        </a>
-      </div>
     </div>
   </section>
 
-  <!-- Recent Articles -->
-  <section class="py-16 sm:py-24">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="flex items-end justify-between mb-10">
-        <div>
-          <p class="text-sm font-medium text-teal-700 mb-1">Recent</p>
-          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">Learning Design Research</h2>
-        </div>
-        <a href="/learning-design/" class="text-sm text-teal-700 hover:underline hidden sm:block">
-          View all &rarr;
-        </a>
-      </div>
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <!-- Divider -->
+  <div class="max-w-[680px] mx-auto px-5">
+    <div style={`height: 1px; background: hsl(185 8% 14%);`}></div>
+  </div>
+
+  <!-- Articles -->
+  <section class="py-12 sm:py-16">
+    <div class="max-w-[680px] mx-auto px-5">
+      <h2 class="text-xs font-semibold uppercase tracking-wider mb-2" style="color: hsl(170 60% 50%);">
+        Latest Articles
+      </h2>
+      <div>
         {articles.map((article) => (
           <ArticleCard
             title={article.data.title}
@@ -70,18 +61,20 @@ const websiteSchema = {
   </section>
 
   <!-- About callout -->
-  <section class="bg-stone-50 border-t border-stone-200 py-16 sm:py-20">
-    <div class="max-w-3xl mx-auto px-4 text-center">
-      <h2 class="font-serif text-2xl font-bold text-slate-900 mb-4">About MoreBetterLabs</h2>
-      <p class="text-slate-500 leading-relaxed mb-6">
-        MoreBetterLabs is a UX research and learning design practice founded by Abe Crystal.
-        Our flagship product is <a href="https://www.ruzuku.com" class="text-teal-700 underline decoration-teal-300 hover:decoration-teal-500">Ruzuku</a>,
-        an online course platform built from the ground up on learning science principles — serving
-        75,000+ courses and 500,000+ students since 2011.
-      </p>
-      <a href="/about/" class="inline-flex items-center text-sm font-medium text-teal-700 hover:underline">
-        Learn more about our work &rarr;
-      </a>
+  <section class="py-16 sm:py-20">
+    <div class="max-w-[680px] mx-auto px-5">
+      <div class="rounded-xl p-8" style={`background: hsl(185 8% 10%); border: 1px solid hsl(185 8% 16%);`}>
+        <h2 class="font-serif text-xl font-bold mb-3" style="color: hsl(170 5% 90%);">About MoreBetterLabs</h2>
+        <p class="text-sm leading-relaxed mb-4" style="color: hsl(170 5% 50%);">
+          MoreBetterLabs is a UX research and learning design practice founded by Abe Crystal.
+          Our flagship product is <a href="https://www.ruzuku.com" style="color: hsl(170 60% 60%); text-decoration: underline; text-decoration-color: hsl(170 60% 50% / 0.4); text-underline-offset: 3px;" rel="noopener">Ruzuku</a>,
+          an online course platform built from the ground up on learning science — serving
+          75,000+ courses and 500,000+ students since 2011.
+        </p>
+        <a href="/about/" class="text-sm font-medium" style="color: hsl(170 60% 60%);">
+          Learn more &rarr;
+        </a>
+      </div>
     </div>
   </section>
 </BaseLayout>

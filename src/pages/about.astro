@@ -42,12 +42,8 @@ const personSchema = {
     },
   },
   knowsAbout: [
-    'Learning Design',
-    'Human-Computer Interaction',
-    'User Experience Research',
-    'Online Education',
-    'Course Design',
-    'Information Architecture',
+    'Learning Design', 'Human-Computer Interaction', 'User Experience Research',
+    'Online Education', 'Course Design', 'Information Architecture',
   ],
 };
 ---
@@ -58,19 +54,19 @@ const personSchema = {
   canonical="/about/"
   schema={[personSchema]}
 >
-  <section class="bg-stone-50 border-b border-stone-200 py-16 sm:py-24">
-    <div class="max-w-3xl mx-auto px-4">
-      <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
+  <section class="pt-20 pb-8 sm:pt-28">
+    <div class="max-w-[680px] mx-auto px-5">
+      <h1 class="font-serif text-3xl sm:text-4xl font-bold leading-tight mb-4" style="color: hsl(170 5% 95%);">
         Abe Crystal, PhD
       </h1>
-      <p class="text-xl text-slate-500 leading-relaxed">
+      <p class="text-lg" style="color: hsl(170 5% 55%);">
         Learning design researcher, course platform builder, and educator.
       </p>
     </div>
   </section>
 
-  <section class="py-16 sm:py-24">
-    <div class="max-w-3xl mx-auto px-4">
+  <section class="pb-20 sm:pb-28">
+    <div class="max-w-[680px] mx-auto px-5">
       <div class="prose-mbl">
         <h2>Background</h2>
         <p>
@@ -105,19 +101,16 @@ const personSchema = {
           </li>
           <li>
             <strong>"Memex Metadata (M2) for Reflective Learning"</strong> (Dublin Core 2006, with Greenberg, Sharma, et al.) —
-            systems that support reflective learning through structured metadata. The principles here underpin how
-            I design reflection and feedback loops in course platforms.
+            systems that support reflective learning through structured metadata.
           </li>
           <li>
             <strong>"Facets Are Fundamental: Rethinking Information Architecture Frameworks"</strong>
             (<em>Technical Communication</em>, 2007) — how faceted classification helps people navigate
-            complex information. This directly shapes how course content should be structured for different
-            learning paths.
+            complex information.
           </li>
           <li>
             <strong>"Task Analysis and Human-Computer Interaction"</strong> (AMCIS 2004, with Ellington) —
-            methodological foundations for understanding how people actually use educational tools, not how
-            designers imagine they will.
+            methodological foundations for understanding how people actually use educational tools.
           </li>
         </ul>
         <p>
@@ -146,11 +139,6 @@ const personSchema = {
             <strong>UCLA</strong> — courses connecting learning science with technology design
           </li>
         </ul>
-        <p>
-          Teaching at these institutions keeps me honest. When I write about learning design principles, I'm
-          drawing on both published research and direct experience watching students learn (and struggle) in
-          real educational settings.
-        </p>
 
         <h2>Building Ruzuku</h2>
         <p>

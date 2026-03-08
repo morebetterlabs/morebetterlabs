@@ -11,17 +11,17 @@ interface Props {
 const { items } = Astro.props;
 ---
 
-<nav aria-label="Breadcrumb" class="text-sm text-slate-400">
+<nav aria-label="Breadcrumb" class="text-sm" style="color: hsl(170 5% 35%);">
   <ol class="flex items-center gap-1.5 flex-wrap">
     {items.map((item, index) => (
       <li class="flex items-center gap-1.5">
-        {index > 0 && <span aria-hidden="true">/</span>}
+        {index > 0 && <span aria-hidden="true" style="color: hsl(170 5% 25%);">/</span>}
         {item.href ? (
-          <a href={item.href} class="hover:text-teal-700 transition-colors">
+          <a href={item.href} class="transition-colors hover:underline underline-offset-3" style="color: hsl(170 5% 40%);" onmouseover="this.style.color='hsl(170 60% 55%)'" onmouseout="this.style.color='hsl(170 5% 40%)'">
             {item.label}
           </a>
         ) : (
-          <span class="text-slate-600">{item.label}</span>
+          <span style="color: hsl(170 5% 55%);">{item.label}</span>
         )}
       </li>
     ))}

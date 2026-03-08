@@ -1,28 +1,31 @@
 ---
 const navItems = [
-  { label: 'Learning Design', href: '/learning-design/' },
+  { label: 'Articles', href: '/learning-design/' },
   { label: 'About', href: '/about/' },
   { label: 'Projects', href: '/projects/' },
 ];
 ---
 
-<header class="border-b border-stone-200 bg-white sticky top-0 z-50">
-  <nav class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between" aria-label="Main navigation">
-    <a href="/" class="flex items-center gap-2 text-slate-900 hover:text-teal-700 transition-colors">
-      <svg width="28" height="28" viewBox="0 0 32 32" class="shrink-0">
-        <rect width="32" height="32" rx="6" fill="currentColor"/>
-        <text x="16" y="22" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">M</text>
+<header class="sticky top-0 z-50 backdrop-blur-md" style={`background: hsl(185 10% 6% / 0.85); border-bottom: 1px solid hsl(185 8% 14%);`}>
+  <nav class="max-w-[680px] mx-auto px-5 h-14 flex items-center justify-between" aria-label="Main navigation">
+    <a href="/" class="flex items-center gap-2.5 group" style="color: hsl(170 5% 90%);">
+      <svg width="26" height="26" viewBox="0 0 32 32" class="shrink-0">
+        <rect width="32" height="32" rx="6" fill="hsl(170 60% 50%)"/>
+        <text x="16" y="22" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="hsl(185 10% 6%)" text-anchor="middle">M</text>
       </svg>
-      <span class="font-serif text-lg font-bold">MoreBetterLabs</span>
+      <span class="font-serif text-base font-bold group-hover:opacity-80 transition-opacity">MoreBetterLabs</span>
     </a>
 
     <!-- Desktop nav -->
-    <ul class="hidden sm:flex items-center gap-6">
+    <ul class="hidden sm:flex items-center gap-5">
       {navItems.map((item) => (
         <li>
           <a
             href={item.href}
-            class="text-sm text-slate-600 hover:text-teal-700 transition-colors"
+            class="text-sm transition-colors"
+            style="color: hsl(170 5% 55%); "
+            onmouseover="this.style.color='hsl(170 60% 60%)'"
+            onmouseout="this.style.color='hsl(170 5% 55%)'"
           >
             {item.label}
           </a>
@@ -33,17 +36,18 @@ const navItems = [
     <!-- Mobile hamburger -->
     <button
       id="menu-toggle"
-      class="sm:hidden p-2 -mr-2 text-slate-600 hover:text-teal-700 transition-colors"
+      class="sm:hidden p-2 -mr-2 transition-colors"
+      style="color: hsl(170 5% 55%);"
       aria-label="Toggle menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
-      <svg id="menu-icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <svg id="menu-icon-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
         <line x1="3" y1="6" x2="21" y2="6"/>
         <line x1="3" y1="12" x2="21" y2="12"/>
         <line x1="3" y1="18" x2="21" y2="18"/>
       </svg>
-      <svg id="menu-icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden">
+      <svg id="menu-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden">
         <line x1="18" y1="6" x2="6" y2="18"/>
         <line x1="6" y1="6" x2="18" y2="18"/>
       </svg>
@@ -51,13 +55,14 @@ const navItems = [
   </nav>
 
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden sm:hidden border-t border-stone-200 bg-white">
-    <ul class="px-4 py-4 space-y-1">
+  <div id="mobile-menu" class="hidden sm:hidden" style={`border-top: 1px solid hsl(185 8% 14%); background: hsl(185 10% 8%);`}>
+    <ul class="px-5 py-4 space-y-1">
       {navItems.map((item) => (
         <li>
           <a
             href={item.href}
-            class="block py-2.5 px-3 rounded-lg text-slate-600 hover:bg-stone-50 hover:text-teal-700 transition-colors"
+            class="block py-2.5 px-3 rounded-lg text-sm transition-colors"
+            style="color: hsl(170 5% 65%);"
           >
             {item.label}
           </a>
