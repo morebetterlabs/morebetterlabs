@@ -8,6 +8,13 @@ keywords:
   - inclusive online learning
   - UDL
   - course accessibility
+faqs:
+  - question: "What is Universal Design for Learning (UDL)?"
+    answer: "UDL is a framework developed by CAST based on neuroscience research showing there is no 'average' learner. It has three principles: multiple means of engagement (the why — different motivation pathways), multiple means of representation (the what — different ways to present information), and multiple means of action and expression (the how — different ways students demonstrate understanding)."
+  - question: "Does accessible course design only benefit students with disabilities?"
+    answer: "No. Research consistently shows that UDL designs improve outcomes for all students. Captions help hearing-impaired students but also non-native speakers and people in noisy environments. Clear structure helps students with cognitive disabilities but also every student navigating complex material. Designing for the edges designs better for the middle."
+  - question: "What are the most impactful accessibility practices for course creators?"
+    answer: "Three categories: content accessibility (captions on all video, readable plain language, sufficient color contrast, descriptive alt text), structural accessibility (consistent lesson structure, clear specific instructions, chunked content respecting working memory limits), and assessment accessibility (multiple modalities for demonstrating understanding, clear rubrics, adequate time without speed pressure)."
 ---
 
 Most course creators think about accessibility as a compliance checkbox: add captions to videos, make sure the contrast ratio passes, include alt text on images. These are necessary, but they miss the larger point.

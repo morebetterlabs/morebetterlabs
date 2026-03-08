@@ -8,6 +8,15 @@ keywords:
   - pricing strategy
   - value perception
   - behavioral economics
+faqs:
+  - question: "Why do most course creators underprice their courses?"
+    answer: "Course creators typically approach pricing as a math problem (costs + competitor research) rather than a psychology problem. They anchor to low-price platforms like Udemy ($15) instead of the value of the outcome they deliver. Research on price-quality inference shows that underpricing actually reduces perceived value and student commitment — students who pay more complete more and learn more."
+  - question: "How does anchoring affect course pricing?"
+    answer: "Tversky and Kahneman's research shows the first number people encounter heavily influences all subsequent judgments. If your audience has been shopping on platforms with $47 courses, that's their anchor. You can reset anchors on your sales page by establishing the value of alternatives first (private coaching at $5,000, workshops at $3,000) before revealing your course price."
+  - question: "Does charging more for a course actually improve student outcomes?"
+    answer: "Yes. Research on the sunk cost effect (Arkes & Blumer, 1985) shows that people who pay more for an experience invest more effort in it. Students who pay $497 are more likely to complete the course, engage with material, and apply what they learn than students who pay $47 for identical content. Price creates commitment."
+  - question: "How should I price my online course?"
+    answer: "Follow a research-informed process: (1) identify the outcome value to students over 12 months, (2) price at 3-10% of that value, (3) research competitor reference prices, (4) design your anchor sequence on the sales page, (5) offer tiers if appropriate (self-paced, cohort, cohort + coaching), and (6) test and iterate based on enrollment and completion rates."
 ---
 
 Most course creators approach pricing as a math problem: add up costs, look at competitors, pick a number. This produces courses priced at $47 or $97 — numbers chosen because they "feel right" or because a marketing guru recommended them.

@@ -8,6 +8,15 @@ keywords:
   - social learning
   - online course community
   - community-based learning
+faqs:
+  - question: "Why is community important in online courses?"
+    answer: "Research shows that the quality of interaction between learners is the most robust predictor of online learning outcomes — more than content quality. Students who interact with each other learn more, persist longer, and report higher satisfaction. Community isn't a nice-to-have feature; it's a pedagogical strategy."
+  - question: "What is a community of practice in online education?"
+    answer: "Etienne Wenger's Communities of Practice framework describes learning groups with three elements: a shared domain (the subject), a community (members who interact and build relationships), and a practice (shared tools, experiences, and approaches). Online courses naturally create domains but community requires intentional design — a discussion forum with no activity is not a community."
+  - question: "How do you build an active course community instead of a dead forum?"
+    answer: "Use structured prompts that connect course concepts to personal experience — not 'share your thoughts' but 'describe one specific situation where you've seen this principle play out.' Integrate discussion into each course step (not a separate tab), maintain instructor presence through facilitation rather than lecturing, and design for progression from low-stakes sharing to deeper vulnerability."
+  - question: "What are the four approaches to course community design?"
+    answer: "The four approaches are: (1) Social Presence — making other participants visible to reduce isolation, (2) Discussion — structured prompts integrated into course steps for peer learning, (3) Live Interaction — scheduled sessions that create time-blocking and normalize struggle, and (4) Accountability and Coaching — peer partners, review mechanisms, and professional facilitation that keep learners on track."
 ---
 
 There's a persistent myth in online education that content is king. Record better videos. Write better workbooks. Add more modules.

@@ -8,6 +8,15 @@ keywords:
   - student engagement
   - active learning
   - self-paced courses
+faqs:
+  - question: "What is the average online course completion rate?"
+    answer: "MOOC completion rates average around 12.6% (Jordan, 2015), with some studies reporting as low as 3.13% (Inside Higher Ed, 2019). However, this reflects self-paced, no-stakes, no-community courses. Cohort-based paid courses with active facilitation regularly achieve 70-90% completion rates. The problem is the design, not the medium."
+  - question: "Why do students drop out of online courses?"
+    answer: "Three main factors: motivation decays without structure (self-paced courses fail on competence feedback and social connection), isolation kills persistence (solo learners interpret confusion as personal failure rather than normal struggle), and content dumps overwhelm (presenting all modules at once triggers a feeling of being too far from the finish to start)."
+  - question: "How do you design an online course for higher completion?"
+    answer: "Five research-backed interventions: (1) active learning over passive consumption, (2) structured pacing instead of self-paced, (3) feedback loops at every step, (4) social connection through discussion and peer interaction, and (5) clear progress visibility. Add accountability structures — peer partners, cohort pacing, and proactive facilitation — on top."
+  - question: "Does active learning actually improve online course outcomes?"
+    answer: "Yes. Freeman et al.'s landmark 2014 meta-analysis of 225 studies found that students in active learning environments were 1.5 times less likely to fail, with average exam scores increasing by half a letter grade. Active learning means exercises, discussions, and applications — not just watching and reading."
 ---
 
 The statistic everyone cites: MOOC completion rates average around 12.6% (Jordan, 2015). Some report even lower. This number has become a kind of shorthand for "online courses don't work."

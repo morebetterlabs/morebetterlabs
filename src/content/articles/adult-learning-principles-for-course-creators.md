@@ -9,6 +9,15 @@ keywords:
   - experiential learning
   - self-directed learning
   - online courses for adults
+faqs:
+  - question: "How do adults learn differently from children?"
+    answer: "Malcolm Knowles' andragogy framework identifies six key differences: adults need to know why they're learning something, they see themselves as self-directed, they bring prior experience that must be leveraged, they learn best when addressing real problems, they're problem-centered rather than subject-centered, and they're driven primarily by internal motivation (self-esteem, quality of life) rather than external rewards."
+  - question: "What is the Know-Feel-Do framework for course design?"
+    answer: "Know-Feel-Do defines three dimensions of course success: Know (what students will understand), Feel (their emotional state — confidence, clarity, motivation), and Do (skills they can perform). Most courses focus only on Know, but Feel and Do are where real transformation happens and where premium pricing is justified."
+  - question: "What is the Dream Exercise for defining course outcomes?"
+    answer: "The Dream Exercise asks: 'Imagine dream students with perfect memories. 3-5 years from now, they still know... or still are able to do... or still find value in...' The 3-5 year timeframe forces you to identify durable outcomes, not transient knowledge — shifting your thinking from content delivery to lasting change."
+  - question: "How should online courses for adults be structured?"
+    answer: "Organize around problems, not topics. Each lesson should include an activity where students apply material to their real situation. Provide choice within structure (guided autonomy), leverage students' prior experience through reflection exercises, and frame everything around problems the student is currently facing — not abstract subjects to study."
 ---
 
 Most course creators start by thinking about their content: what to teach, how to organize it, what format to use. This is backwards.

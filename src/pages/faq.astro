@@ -1,0 +1,182 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'FAQ' },
+];
+
+const siteUrl = 'https://morebetterlabs.com';
+
+const faqs = [
+  {
+    category: 'Course Design Foundations',
+    items: [
+      {
+        question: 'What are the two biggest mistakes in online course design?',
+        answer: 'The Instructionism Trap (designing around lectures instead of active learning) and the Aboutness Trap (organizing around topics instead of outcomes). Most struggling courses are stuck in at least one. The escape is Dual Minimalism: focused outcomes paired with minimal content to scaffold progress.',
+        link: '/learning-design/the-two-traps-that-kill-online-courses/',
+      },
+      {
+        question: 'How do you define measurable outcomes for a course?',
+        answer: 'Use the Know-Feel-Do framework: define what students will know, feel, and be able to do. Then make each outcome observable — not "feel more confident" but "deliver a presentation to a live audience." The Dream Exercise helps: imagine dream students 3-5 years out. What do they still know, do, or find value in?',
+        link: '/learning-design/how-to-define-measurable-outcomes/',
+      },
+      {
+        question: 'How do adults learn differently from children?',
+        answer: 'Malcolm Knowles\' andragogy identifies six key differences: adults need to know why, see themselves as self-directed, bring prior experience, learn best from real problems, are problem-centered (not subject-centered), and are driven by internal motivation. These principles should shape every course design decision.',
+        link: '/learning-design/adult-learning-principles-for-course-creators/',
+      },
+      {
+        question: 'What is a learner persona and why does it matter?',
+        answer: 'A learner persona describes who learns from your course — their motivation, prior knowledge, problems, questions, and support needs. It\'s fundamentally different from a marketing persona, which describes who buys. What gets someone to enroll is different from what gets them to succeed.',
+        link: '/learning-design/the-learner-persona-method/',
+      },
+    ],
+  },
+  {
+    category: 'Building & Launching Courses',
+    items: [
+      {
+        question: 'How much content should an online course have?',
+        answer: 'Less than you think. Cognitive Load Theory shows working memory handles 4-7 new items at a time. When a course exceeds that, learning stops. Use the Dual Minimalism principle: focused outcomes plus the minimum content needed to reach them. Most effective courses are 4-6 weeks.',
+        link: '/learning-design/the-minimum-viable-course/',
+      },
+      {
+        question: 'Should I pilot my course before perfecting it?',
+        answer: 'Yes. The information you need to make your course great can only come from running it. Plan for three iterations: a pilot (test structure), a refined version (adjust details), and a confident version (add polish). Polish applied to the wrong design is wasted effort.',
+        link: '/learning-design/why-your-first-course-should-be-imperfect/',
+      },
+      {
+        question: 'How do I scope my course so students actually finish it?',
+        answer: 'Use four progressive scoping questions: (1) How long to deliver on the promise? (aim for 4-6 weeks), (2) Would students benefit after just one month?, (3) What\'s the first milestone that gives a visceral sense it\'s working?, (4) What could you teach on a two-hour plane ride?',
+        link: '/learning-design/the-minimum-viable-course/',
+      },
+    ],
+  },
+  {
+    category: 'Engagement & Completion',
+    items: [
+      {
+        question: 'What is the average online course completion rate?',
+        answer: 'MOOC completion rates average around 3-13%. But this reflects self-paced, no-stakes, no-community courses. Cohort-based paid courses with active facilitation regularly achieve 70-90% completion. The problem is design, not the medium.',
+        link: '/learning-design/why-online-course-completion-rates-are-low/',
+      },
+      {
+        question: 'Why do cohort-based courses outperform self-paced?',
+        answer: 'Cohorts deliver social presence (you\'re not alone), structured pacing (spaced practice), natural accountability (visible participation), and peer learning (elaborative interrogation). These are the exact factors learning science identifies as drivers of engagement and completion.',
+        link: '/learning-design/the-science-of-cohort-based-learning/',
+      },
+      {
+        question: 'How important is community in online courses?',
+        answer: 'Research shows learner-to-learner interaction is the strongest predictor of online learning outcomes — more than content quality. Community isn\'t a feature bolted onto a course; it\'s a pedagogical strategy. Design it intentionally through structured prompts, in-course discussion, and visible participation.',
+        link: '/learning-design/community-as-pedagogy/',
+      },
+      {
+        question: 'How do you design effective feedback in online courses?',
+        answer: 'Feedback has an effect size of 0.73 — nearly twice the average educational intervention. Make it timely, specific, task-focused (not ego-focused), and actionable. Use four channels: instructor feedback at milestones, structured peer review, self-assessment with rubrics, and automated comprehension checks.',
+        link: '/learning-design/designing-effective-feedback-in-online-courses/',
+      },
+    ],
+  },
+  {
+    category: 'Business of Course Design',
+    items: [
+      {
+        question: 'How should I price my online course?',
+        answer: 'Pricing is a psychology problem, not a math problem. Research shows students who pay more complete more and learn more (sunk cost effect). Price at 3-10% of the outcome value over 12 months. Use anchoring on your sales page, offer tiers, and iterate based on enrollment and completion.',
+        link: '/learning-design/the-psychology-of-course-pricing/',
+      },
+      {
+        question: 'What makes an online certification credible?',
+        answer: 'Three factors: signaling (the assessment reliably indicates capabilities to third parties), human capital (the process develops real skills), and social closure (the credential confers meaningful status). Use competency-based assessment — certify demonstrated ability, not course completion.',
+        link: '/learning-design/designing-credible-certification-programs/',
+      },
+    ],
+  },
+];
+
+const allFaqItems = faqs.flatMap((c) => c.items);
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: allFaqItems.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+    { '@type': 'ListItem', position: 2, name: 'FAQ', item: `${siteUrl}/faq/` },
+  ],
+};
+---
+
+<BaseLayout
+  title="Learning Design FAQ | MoreBetterLabs"
+  description="Answers to common questions about online course design, completion rates, pricing psychology, feedback, community, and iterative course development — backed by research."
+  canonical="/faq/"
+  schema={[faqSchema, breadcrumbSchema]}
+>
+  <section class="pt-20 pb-4 sm:pt-28">
+    <div class="max-w-[680px] mx-auto px-5">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1 class="font-serif text-3xl sm:text-4xl font-bold leading-tight mt-6 mb-4" style="color: hsl(170 5% 95%);">
+        Frequently Asked Questions
+      </h1>
+      <p class="text-lg leading-relaxed" style="color: hsl(170 5% 55%);">
+        Research-backed answers to the most common questions about online course design.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-20 sm:pb-28">
+    <div class="max-w-[680px] mx-auto px-5">
+      {faqs.map((category, i) => (
+        <div class={i > 0 ? 'mt-12' : 'mt-8'}>
+          <h2 class="text-xs font-semibold uppercase tracking-wider mb-4" style="color: hsl(170 60% 50%);">
+            {category.category}
+          </h2>
+          <div>
+            {category.items.map((faq) => (
+              <details class="faq-item" style={`
+                margin-bottom: 0.75rem;
+                padding: 1rem 1.25rem;
+                border-radius: 0.5rem;
+                background: hsl(185 10% 8%);
+                border: 1px solid hsl(185 8% 14%);
+              `}>
+                <summary style={`
+                  color: hsl(170 5% 85%);
+                  font-weight: 600;
+                  cursor: pointer;
+                  font-size: 0.95rem;
+                  line-height: 1.5;
+                `}>{faq.question}</summary>
+                <p style={`
+                  color: hsl(170 5% 55%);
+                  margin-top: 0.75rem;
+                  font-size: 0.925rem;
+                  line-height: 1.7;
+                `}>
+                  {faq.answer}
+                  {' '}<a href={faq.link} style="color: hsl(170 60% 50%); text-decoration: underline; text-underline-offset: 2px; font-size: 0.875rem;">Read more →</a>
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

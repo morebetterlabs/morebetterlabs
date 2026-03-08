@@ -11,6 +11,7 @@ export const GET: APIRoute = async () => {
     { url: '/about/', lastmod: '2026-03-01' },
     { url: '/projects/', lastmod: '2026-03-01' },
     { url: '/learning-design/', lastmod: '2026-03-01' },
+    { url: '/faq/', lastmod: '2026-03-08' },
   ];
 
   const articlePages = articles.map((article) => ({

@@ -8,6 +8,15 @@ keywords:
   - formative assessment
   - peer feedback
   - learning design
+faqs:
+  - question: "Why is feedback so important in online courses?"
+    answer: "Feedback has an effect size of 0.73 in Hattie's research — nearly twice the average educational intervention (0.40). Yet most online courses provide almost no feedback. The typical self-paced course consists of videos and maybe a quiz, with nobody telling students whether they truly understood the material or helping when their understanding goes sideways."
+  - question: "What makes feedback effective in a learning context?"
+    answer: "Four qualities: timely (delivered while the student is still mentally engaged with the material), specific (pointing to exact elements, not 'good job'), task-focused rather than ego-focused (about the work, not the person), and actionable (the student knows exactly what to do next after receiving it)."
+  - question: "What is a feedback loop vs. a feedback event?"
+    answer: "A feedback event is one-time: submit work, get a grade. A feedback loop is a cycle: submit work, receive feedback, revise, resubmit. The draft-feedback-revision cycle produces dramatically better learning because feedback leads to action and improvement, not just assessment."
+  - question: "How can you scale feedback in an online course?"
+    answer: "Use four channels: instructor feedback concentrated at key milestones (highest impact, least scalable), structured peer feedback with specific rubrics (benefits both giver and receiver), self-assessment with checklists that build metacognitive awareness, and automated feedback through quizzes and progress tracking for high-frequency comprehension checks."
 ---
 
 John Hattie's synthesis of over 800 meta-analyses found that feedback has an effect size of 0.73 — placing it among the most powerful influences on student achievement (Hattie & Timperley, 2007). To put that in perspective, the average educational intervention has an effect size of 0.40. Feedback is nearly twice as impactful as the average.

@@ -8,6 +8,15 @@ keywords:
   - credible certification
   - competency-based education
   - assessment design
+faqs:
+  - question: "What makes an online certification credible?"
+    answer: "Three factors from credential theory: signaling (the assessment reliably indicates the holder's capabilities to third parties), human capital (the process actually develops skills), and social closure (the credential creates meaningful status distinction). Most online certifications fail all three because they certify completion (watched videos) rather than competence (demonstrated skills)."
+  - question: "What is the difference between completion-based and competency-based certification?"
+    answer: "Completion-based certification says 'student watched all videos and passed a quiz' — it certifies attendance. Competency-based certification says 'student demonstrated proficiency in each specific skill' — it certifies ability. Competency-based programs define observable skills, assess each one separately, and require proficiency in all competencies to earn the credential."
+  - question: "What assessment methods work best for online certification programs?"
+    answer: "The most credible programs use multiple methods: portfolio assessment (real work samples evaluated against rubrics), practical demonstration (recorded performances of the certified skill), written analysis (realistic scenario-based problems), peer evaluation (trained peers assess using structured criteria), and supervised practice (mentor-verified practice hours). Multiple methods increase assessment validity."
+  - question: "How do you build credibility for a new certification program?"
+    answer: "Start with rigor over volume — certify 10 people through a demanding process rather than 100 through a rubber stamp. Publish your competency framework and standards publicly. Track and share graduate outcomes (client results, career advancement). Align with industry standards where they exist. Create a community of practice among certified graduates."
 ---
 
 Anyone can issue a certificate. Print a PDF, add a name and a date, call it a certification. This is precisely why most online certifications are worthless — and why the few that are credible command premium prices.

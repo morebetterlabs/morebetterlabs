@@ -8,6 +8,13 @@ keywords:
   - social learning theory
   - online course completion rates
   - community of inquiry
+faqs:
+  - question: "Why do cohort-based courses outperform self-paced courses?"
+    answer: "Cohort courses deliver three elements self-paced courses miss: cognitive presence (meaning-making through discussion), social presence (connection with other learners), and natural accountability through visible participation. They also introduce desirable difficulties — pacing constraints, discussion requirements, and peer diversity — that strengthen long-term learning."
+  - question: "What is the ideal cohort size for an online course?"
+    answer: "Research on team dynamics suggests 12-30 participants. Smaller cohorts (under 10) risk feeling empty and limit perspective diversity. Larger cohorts (over 50) lose the social presence that makes the model work. Medium-sized cohorts allow everyone to recognize each other while maintaining diverse viewpoints."
+  - question: "What is the Community of Inquiry framework?"
+    answer: "Garrison, Anderson, and Archer's framework identifies three elements required for deep learning: cognitive presence (constructing meaning through reflection and discourse), social presence (identifying with the community and developing relationships), and teaching presence (design, facilitation, and direction). Self-paced courses can deliver cognitive and teaching presence, but social presence requires other people working on the same material at the same time."
 ---
 
 Most online courses are built around a content library model: record videos, upload them, let people watch whenever. It's efficient to produce. It's also why the majority of self-paced online courses have completion rates below 15%.
