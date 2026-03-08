@@ -4,8 +4,49 @@ import ArticleCard from '../../components/ArticleCard.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
 
-const articles = (await getCollection('articles'))
-  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+const allArticles = await getCollection('articles');
+const articlesBySlug = Object.fromEntries(allArticles.map((a) => [a.slug, a]));
+
+// Define topic clusters
+const clusters = [
+  {
+    title: 'Course Design Foundations',
+    description: 'The research-backed principles behind courses that actually work.',
+    slugs: [
+      'the-two-traps-that-kill-online-courses',
+      'how-to-define-measurable-outcomes',
+      'the-learner-persona-method',
+      'adult-learning-principles-for-course-creators',
+    ],
+  },
+  {
+    title: 'Building Effective Courses',
+    description: 'From scoping to piloting — the methodology of iterative course design.',
+    slugs: [
+      'the-minimum-viable-course',
+      'why-your-first-course-should-be-imperfect',
+      'designing-effective-feedback-in-online-courses',
+      'inclusive-course-design',
+    ],
+  },
+  {
+    title: 'Community & Completion',
+    description: 'Why learning together works — and how to design for it.',
+    slugs: [
+      'community-as-pedagogy',
+      'why-online-course-completion-rates-are-low',
+      'the-science-of-cohort-based-learning',
+    ],
+  },
+  {
+    title: 'Business of Course Design',
+    description: 'Where learning science meets sustainable business.',
+    slugs: [
+      'the-psychology-of-course-pricing',
+      'designing-credible-certification-programs',
+    ],
+  },
+];
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },
@@ -23,18 +64,20 @@ const collectionSchema = {
 const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  itemListElement: articles.map((article, i) => ({
-    '@type': 'ListItem',
-    position: i + 1,
-    name: article.data.title,
-    url: `https://morebetterlabs.com/learning-design/${article.slug}/`,
-  })),
+  itemListElement: allArticles
+    .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+    .map((article, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: article.data.title,
+      url: `https://morebetterlabs.com/learning-design/${article.slug}/`,
+    })),
 };
 ---
 
 <BaseLayout
   title="Learning Design for Course Creators | MoreBetterLabs"
-  description="Research-backed articles on learning design by Abe Crystal, PhD. Cohort learning, completion rates, adult learning principles, feedback design, and more."
+  description="Research-backed articles on learning design by Abe Crystal, PhD. Frameworks for course design, completion rates, community learning, feedback, and more."
   canonical="/learning-design/"
   schema={[collectionSchema, itemListSchema]}
 >
@@ -45,27 +88,38 @@ const itemListSchema = {
         Learning Design
       </h1>
       <p class="text-lg leading-relaxed" style="color: hsl(170 5% 55%);">
-        Research-backed insights on designing online learning that actually works.
+        Research-backed insights on designing online learning that actually works. By <a href="/about" style="color: hsl(170 60% 50%); text-decoration: underline; text-underline-offset: 3px;">Abe Crystal, PhD</a>.
       </p>
     </div>
   </section>
 
   <section class="pb-20 sm:pb-28">
     <div class="max-w-[680px] mx-auto px-5">
-      <div>
-        {articles.map((article) => (
-          <ArticleCard
-            title={article.data.title}
-            description={article.data.description}
-            href={`/learning-design/${article.slug}/`}
-            date={article.data.publishDate}
-          />
-        ))}
-      </div>
-
-      {articles.length === 0 && (
-        <p style="color: hsl(170 5% 45%);">Articles coming soon.</p>
-      )}
+      {clusters.map((cluster, i) => (
+        <div class={i > 0 ? 'mt-14' : 'mt-8'}>
+          <div class="mb-1">
+            <h2 class="text-xs font-semibold uppercase tracking-wider" style="color: hsl(170 60% 50%);">
+              {cluster.title}
+            </h2>
+            <p class="text-sm mt-1" style="color: hsl(170 5% 40%);">
+              {cluster.description}
+            </p>
+          </div>
+          <div>
+            {cluster.slugs.map((slug) => {
+              const article = articlesBySlug[slug];
+              return article ? (
+                <ArticleCard
+                  title={article.data.title}
+                  description={article.data.description}
+                  href={`/learning-design/${article.slug}/`}
+                  date={article.data.publishDate}
+                />
+              ) : null;
+            })}
+          </div>
+        </div>
+      ))}
     </div>
   </section>
 </BaseLayout>

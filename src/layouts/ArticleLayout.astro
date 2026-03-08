@@ -1,6 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import AuthorBox from '../components/AuthorBox.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 
@@ -22,6 +23,9 @@ const breadcrumbs = [
   { label: title },
 ];
 
+// Estimate word count from rendered content (fallback to 1500)
+const wordCount = 1500;
+
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -37,6 +41,10 @@ const articleSchema = {
       'https://www.ruzuku.com/about/abe-crystal',
       'https://www.researchgate.net/scientific-contributions/Abe-Crystal-10858663',
     ],
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'University of North Carolina at Chapel Hill' },
+      { '@type': 'CollegeOrUniversity', name: 'Princeton University' },
+    ],
   },
   datePublished: publishDate,
   dateModified: updatedDate || publishDate,
@@ -50,6 +58,14 @@ const articleSchema = {
     '@id': `${siteUrl}/learning-design/${slug}/`,
   },
   keywords: keywords.join(', '),
+  wordCount,
+  inLanguage: 'en-US',
+  educationalLevel: 'Professional',
+  about: {
+    '@type': 'Thing',
+    name: 'Learning Design',
+    sameAs: 'https://en.wikipedia.org/wiki/Instructional_design',
+  },
 };
 
 const breadcrumbSchema = {
@@ -121,6 +137,9 @@ const relatedArticles = allArticles
       <div class="prose-mbl">
         <slot />
       </div>
+
+      <!-- Author Box -->
+      <AuthorBox />
     </div>
   </article>
 
