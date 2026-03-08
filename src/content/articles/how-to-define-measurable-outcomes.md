@@ -9,6 +9,15 @@ keywords:
   - Know Feel Do framework
   - backward design online course
   - course design outcomes
+faqs:
+  - question: "How do you define measurable outcomes for an online course?"
+    answer: "Use the Know-Feel-Do framework: define what students will know (knowledge), feel (confidence, clarity), and be able to do (skills, actions) after the course. Then specify observable criteria — not 'feel more confident' but 'deliver a polished presentation to a live audience.' Measurable means you can see, read, or verify that the student achieved it."
+  - question: "What is the Dream Exercise in course design?"
+    answer: "The Dream Exercise asks: 'Imagine dream students with perfect memories. 3-5 years from now, they still know... or still are able to do... or still find value in...' The 3-5 year timeframe forces you to identify durable outcomes, not just what students will remember from next week's module."
+  - question: "How long should an online course be?"
+    answer: "Most effective courses — especially pilots — are four to six weeks. If your course needs six months, the outcome is probably too broad. Use the four scoping questions to progressively tighten scope: How long to deliver? Value after one month? First visceral milestone? What would you teach on a two-hour plane ride?"
+  - question: "What is the Know-Feel-Do framework?"
+    answer: "Know-Feel-Do captures three dimensions of learning outcomes. Know = what students understand. Feel = their emotional state (confidence, clarity, calm). Do = what they can do that they couldn't before. Most courses focus only on Know, but Feel and Do are what drive real behavior change and course completion."
 ---
 
 "Students will feel more confident." "Learners will understand the fundamentals of marketing." "Participants will gain valuable skills."

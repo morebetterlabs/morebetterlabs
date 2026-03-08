@@ -9,6 +9,15 @@ keywords:
   - test your course
   - course pilot
   - design research methodology
+faqs:
+  - question: "Should I pilot my course before perfecting it?"
+    answer: "Yes. The information you need to make your course great can only come from running it with real students. Polish applied to the wrong design is wasted effort — if your course structure is wrong, perfecting individual modules in that wrong structure helps no one. Pilot first, then refine based on real data."
+  - question: "How many times should you run a course before it's ready?"
+    answer: "Plan for three iterations. The first (pilot) reveals structural issues — wrong sequence, missing content, confusing activities. The second (refined version) tests your fixes and fine-tunes details. By the third iteration, you understand the course's real dynamics and can invest in production quality with confidence."
+  - question: "What should you look for when piloting a course?"
+    answer: "Focus on four things: Where do students get stuck? (specific steps and concepts, not just 'Module 3 was hard'). Where do they light up? (the 'aha' moments). Where do they disengage? (energy drops, sections that feel like a slog). What questions do they ask? (student questions reveal the gaps between your assumptions and their reality)."
+  - question: "Why do course creators delay launching?"
+    answer: "Two cognitive biases drive delay: loss aversion (the potential embarrassment of launching something imperfect feels more threatening than the real cost of not launching) and the planning fallacy (we systematically underestimate how long polish will take — 'one more week' turns into three months)."
 ---
 
 In my World Class Courses workshop, I tell participants something that makes many of them visibly uncomfortable:

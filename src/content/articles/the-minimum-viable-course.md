@@ -9,6 +9,15 @@ keywords:
   - cognitive load course design
   - course scope
   - pilot course
+faqs:
+  - question: "How much content should an online course have?"
+    answer: "Less than you think. Cognitive Load Theory shows that working memory can handle roughly 4-7 new items at a time. When a course exceeds that capacity, learning stops. The goal is the minimum viable content to scaffold progress toward a focused outcome — not comprehensive coverage of a topic."
+  - question: "What is course overdosing?"
+    answer: "Overdosing, a term from course creator Jen Louden, means loading a course with more content and activities than students can realistically process. It happens when courses are organized around topics (the Aboutness Trap) instead of outcomes, making completeness feel necessary. The result is overwhelm and dropout."
+  - question: "How do you scope a course that students will actually finish?"
+    answer: "Use four progressive scoping questions: (1) How long to deliver on the promise? (aim for 4-6 weeks), (2) Would students see benefits after just one month?, (3) What's the first milestone that gives a visceral sense it's working?, (4) What could you teach on a two-hour plane ride that would leave them saying 'that really helped'?"
+  - question: "Why do students drop out of online courses?"
+    answer: "Most dropout is a capacity problem, not a motivation problem. When courses overload working memory with too much new information, cognitive systems shut down. Students feel overwhelmed, fall behind, and disengage. The fix is Dual Minimalism: focused outcomes paired with only the content needed to reach them."
 ---
 
 Here's a pattern I've seen hundreds of times: a course creator builds a 12-module course with 47 video lessons, 15 worksheets, 8 bonus PDFs, and a resource library. They launch. Students enroll enthusiastically. By week three, most have stopped logging in. By the end, completion rates are dismal.

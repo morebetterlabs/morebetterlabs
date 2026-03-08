@@ -9,6 +9,15 @@ keywords:
   - course design framework
   - online course not working
   - cognitive load course design
+faqs:
+  - question: "What is the biggest mistake in online course design?"
+    answer: "The two most common mistakes are the Instructionism Trap (designing courses around lectures and content delivery instead of active learning) and the Aboutness Trap (organizing courses around topics instead of learner outcomes). Research shows active learning environments reduce failure rates by 1.5x compared to lecture-based instruction."
+  - question: "Why do expert course creators make bad courses?"
+    answer: "The Curse of Knowledge makes it genuinely difficult for experts to remember what it was like to not know something. This leads to skipping 'obvious' steps, using jargon, and organizing content in ways that make sense to experts but confuse beginners — a phenomenon called the expertise reversal effect."
+  - question: "How do you fix a course that students don't finish?"
+    answer: "Start by diagnosing which trap you're in. If students are passive (watching, reading, not doing), you're in the Instructionism Trap — redesign around activities. If students feel overwhelmed or your course reads like a textbook, you're in the Aboutness Trap — refocus around a specific, measurable outcome using Dual Minimalism."
+  - question: "What is Dual Minimalism in course design?"
+    answer: "Dual Minimalism is a design framework with two principles: (1) focused, well-scoped outcomes that deliver value, and (2) minimal content to scaffold progress toward those outcomes. It's the antidote to both the Instructionism and Aboutness traps."
 ---
 
 After a decade of building [Ruzuku](https://www.ruzuku.com) and watching thousands of courses succeed or fail, I've seen the same two design failures kill courses over and over. Not bad marketing. Not wrong pricing. Bad learning design.

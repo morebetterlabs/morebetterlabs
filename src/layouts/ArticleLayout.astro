@@ -5,16 +5,22 @@ import AuthorBox from '../components/AuthorBox.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
 interface Props {
   title: string;
   description: string;
   publishDate: string;
   updatedDate?: string;
   keywords?: string[];
+  faqs?: FAQ[];
   slug: string;
 }
 
-const { title, description, publishDate, updatedDate, keywords = [], slug } = Astro.props;
+const { title, description, publishDate, updatedDate, keywords = [], faqs = [], slug } = Astro.props;
 const siteUrl = 'https://morebetterlabs.com';
 
 const breadcrumbs = [
@@ -81,6 +87,22 @@ const breadcrumbSchema = {
     })),
 };
 
+// FAQ schema (only if FAQs are provided)
+const faqSchema = faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+} : null;
+
+const schemas = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
+
 // Get related articles (all except current)
 const allArticles = await getCollection('articles');
 const relatedArticles = allArticles
@@ -93,7 +115,7 @@ const relatedArticles = allArticles
   title={`${title} | MoreBetterLabs`}
   description={description}
   canonical={`/learning-design/${slug}/`}
-  schema={[articleSchema, breadcrumbSchema]}
+  schema={schemas}
   keywords={keywords}
 >
   <article>
@@ -137,6 +159,38 @@ const relatedArticles = allArticles
       <div class="prose-mbl">
         <slot />
       </div>
+
+      <!-- FAQ Section -->
+      {faqs.length > 0 && (
+        <section class="faq-section" style={`margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(185 8% 14%);`}>
+          <h2 style="color: hsl(170 5% 90%); font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; font-family: var(--font-serif);">
+            Frequently Asked Questions
+          </h2>
+          {faqs.map((faq) => (
+            <details class="faq-item" style={`
+              margin-bottom: 1rem;
+              padding: 1rem 1.25rem;
+              border-radius: 0.5rem;
+              background: hsl(185 10% 8%);
+              border: 1px solid hsl(185 8% 14%);
+            `}>
+              <summary style={`
+                color: hsl(170 5% 85%);
+                font-weight: 600;
+                cursor: pointer;
+                font-size: 0.95rem;
+                line-height: 1.5;
+              `}>{faq.question}</summary>
+              <p style={`
+                color: hsl(170 5% 55%);
+                margin-top: 0.75rem;
+                font-size: 0.925rem;
+                line-height: 1.7;
+              `}>{faq.answer}</p>
+            </details>
+          ))}
+        </section>
+      )}
 
       <!-- Author Box -->
       <AuthorBox />

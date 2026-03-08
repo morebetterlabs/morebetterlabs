@@ -8,6 +8,10 @@ const articles = defineCollection({
     publishDate: z.string(),
     updatedDate: z.string().optional(),
     keywords: z.array(z.string()).optional(),
+    faqs: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).optional(),
   }),
 });
 

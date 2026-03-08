@@ -9,6 +9,13 @@ keywords:
   - student avatar
   - learner analysis
   - who is my course for
+faqs:
+  - question: "What is a learner persona and how is it different from a marketing persona?"
+    answer: "A marketing persona tells you who buys (demographics, pain points, buying triggers). A learner persona tells you who learns — their motivation, prior knowledge, specific problems, questions, and support needs. These are fundamentally different: what gets someone to enroll is different from what gets them to succeed."
+  - question: "How do you create a learner persona for your course?"
+    answer: "Build it from real conversations, not imagination. Interview 5-10 potential students with open-ended questions: 'What have you tried so far?' 'What's been the hardest part?' Then look for patterns across four dimensions: motivation (why now?), problems (specific obstacles), questions (what they're confused about), and needs (time, format, support)."
+  - question: "What are the four dimensions of a learner persona?"
+    answer: "The four dimensions are: (1) Motivation — why they're taking the course right now, (2) Problems — specific obstacles they face, not topic-level problems, (3) Questions — what they need to understand, revealing their current mental model, and (4) Needs — time constraints, learning preferences, accountability structures, and technology comfort level."
 ---
 
 Every course creation program tells you to create a "student avatar" or "ideal client profile." Name her Sarah. She's 35, a yoga teacher, makes $60K, has two kids, and wants to build an online business.
