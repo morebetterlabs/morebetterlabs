@@ -1,0 +1,90 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  schema?: object[];
+  ogImage?: string;
+}
+
+const { title, description, canonical, schema = [], ogImage } = Astro.props;
+const siteUrl = 'https://morebetterlabs.com';
+const canonicalUrl = canonical ? `${siteUrl}${canonical}` : Astro.url.href;
+const ogImageUrl = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/og-image.png`;
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'MoreBetterLabs',
+  url: siteUrl,
+  description: 'Learning design research and practice by Abe Crystal, PhD',
+  founder: {
+    '@type': 'Person',
+    name: 'Abe Crystal',
+    honorificSuffix: 'PhD',
+    jobTitle: 'Learning Design Researcher',
+    url: `${siteUrl}/about`,
+    sameAs: [
+      'https://www.ruzuku.com/about/abe-crystal',
+      'https://www.researchgate.net/scientific-contributions/Abe-Crystal-10858663',
+    ],
+    alumniOf: [
+      {
+        '@type': 'CollegeOrUniversity',
+        name: 'University of North Carolina at Chapel Hill',
+      },
+      {
+        '@type': 'CollegeOrUniversity',
+        name: 'Princeton University',
+      },
+    ],
+    affiliation: [
+      { '@type': 'Organization', name: 'Ruzuku', url: 'https://www.ruzuku.com' },
+      { '@type': 'Organization', name: 'MoreBetterLabs', url: siteUrl },
+    ],
+  },
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap.xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:site_name" content="MoreBetterLabs" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    {schema.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <Header />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

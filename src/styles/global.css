@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-slate-600;
+  }
+
+  h1, h2, h3 {
+    @apply text-slate-900;
+  }
+}
+
+@layer components {
+  .prose-mbl {
+    @apply prose prose-slate max-w-none;
+    @apply prose-headings:font-serif prose-headings:text-slate-900;
+    @apply prose-a:text-teal-700 prose-a:underline prose-a:decoration-teal-300 hover:prose-a:text-teal-800 hover:prose-a:decoration-teal-500;
+    @apply prose-blockquote:border-teal-300 prose-blockquote:text-slate-700;
+    @apply prose-strong:text-slate-800;
+  }
+
+  .callout {
+    @apply rounded-xl border border-teal-200 bg-teal-50/50 p-6 my-8;
+  }
+
+  .callout-title {
+    @apply font-serif text-lg font-bold text-teal-900 mb-2;
+  }
+
+  .reference-list {
+    @apply text-sm text-slate-500 border-t border-slate-200 pt-6 mt-10;
+  }
+
+  .reference-list li {
+    @apply mb-2;
+  }
+}

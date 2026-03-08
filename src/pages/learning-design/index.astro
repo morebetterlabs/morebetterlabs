@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const articles = (await getCollection('articles'))
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Learning Design' },
+];
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Learning Design for Course Creators',
+  description: 'Research-backed articles on learning design by Abe Crystal, PhD. How to design online courses grounded in learning science.',
+  url: 'https://morebetterlabs.com/learning-design/',
+};
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: articles.map((article, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: article.data.title,
+    url: `https://morebetterlabs.com/learning-design/${article.slug}/`,
+  })),
+};
+---
+
+<BaseLayout
+  title="Learning Design for Course Creators | MoreBetterLabs"
+  description="Research-backed articles on learning design by Abe Crystal, PhD. Cohort learning, completion rates, adult learning principles, feedback design, and more — grounded in learning science, tested in practice."
+  canonical="/learning-design/"
+  schema={[collectionSchema, itemListSchema]}
+>
+  <section class="bg-stone-50 border-b border-stone-200 pt-6 pb-16 sm:pb-24">
+    <div class="max-w-3xl mx-auto px-4">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mt-6 mb-4 leading-tight">
+        Learning Design
+      </h1>
+      <p class="text-xl text-slate-500 leading-relaxed">
+        Research-backed insights on designing online learning experiences that actually work.
+        Drawing on my academic research at UNC-Chapel Hill, NC State, and UCLA — and tested through
+        75,000+ courses on <a href="https://www.ruzuku.com" class="text-teal-700 underline decoration-teal-300 hover:decoration-teal-500" rel="noopener">Ruzuku</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 sm:py-24">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {articles.map((article) => (
+          <ArticleCard
+            title={article.data.title}
+            description={article.data.description}
+            href={`/learning-design/${article.slug}/`}
+            date={article.data.publishDate}
+          />
+        ))}
+      </div>
+
+      {articles.length === 0 && (
+        <p class="text-center text-slate-500">Articles coming soon.</p>
+      )}
+    </div>
+  </section>
+
+  <!-- About callout -->
+  <section class="bg-stone-50 border-t border-stone-200 py-16">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="font-serif text-xl font-bold text-slate-900 mb-3">About These Articles</h2>
+      <p class="text-slate-500 text-sm leading-relaxed">
+        Written by <a href="/about/" class="text-teal-700 hover:underline">Abe Crystal, PhD</a> —
+        learning design researcher with 13 peer-reviewed publications, educator at UNC-Chapel Hill,
+        NC State, and UCLA, and co-founder of
+        <a href="https://www.ruzuku.com" class="text-teal-700 hover:underline" rel="noopener">Ruzuku</a>.
+        Every article is grounded in published learning science and tested through real course design.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

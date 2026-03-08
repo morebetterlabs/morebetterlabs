@@ -1,0 +1,136 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+interface Props {
+  title: string;
+  description: string;
+  publishDate: string;
+  updatedDate?: string;
+  keywords?: string[];
+  slug: string;
+}
+
+const { title, description, publishDate, updatedDate, keywords = [], slug } = Astro.props;
+const siteUrl = 'https://morebetterlabs.com';
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Learning Design', href: '/learning-design/' },
+  { label: title },
+];
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  author: {
+    '@type': 'Person',
+    name: 'Abe Crystal',
+    honorificSuffix: 'PhD',
+    jobTitle: 'Learning Design Researcher',
+    url: `${siteUrl}/about`,
+    sameAs: [
+      'https://www.ruzuku.com/about/abe-crystal',
+      'https://www.researchgate.net/scientific-contributions/Abe-Crystal-10858663',
+    ],
+  },
+  datePublished: publishDate,
+  dateModified: updatedDate || publishDate,
+  publisher: {
+    '@type': 'Organization',
+    name: 'MoreBetterLabs',
+    url: siteUrl,
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': `${siteUrl}/learning-design/${slug}/`,
+  },
+  keywords: keywords.join(', '),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs
+    .filter((b) => b.href)
+    .map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: b.label,
+      item: `${siteUrl}${b.href}`,
+    })),
+};
+
+// Get related articles (all except current)
+const allArticles = await getCollection('articles');
+const relatedArticles = allArticles
+  .filter((a) => a.slug !== slug)
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title={`${title} | MoreBetterLabs`}
+  description={description}
+  canonical={`/learning-design/${slug}/`}
+  schema={[articleSchema, breadcrumbSchema]}
+>
+  <article>
+    <!-- Hero -->
+    <header class="bg-stone-50 border-b border-stone-200 pt-6 pb-12 sm:pb-16">
+      <div class="max-w-3xl mx-auto px-4">
+        <Breadcrumbs items={breadcrumbs} />
+        <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mt-6 mb-4 leading-tight">
+          {title}
+        </h1>
+        <p class="text-lg text-slate-500 mb-6">{description}</p>
+        <div class="flex items-center gap-3 text-sm text-slate-500">
+          <span class="font-medium text-slate-700">Abe Crystal, PhD</span>
+          <span aria-hidden="true">&middot;</span>
+          <time datetime={publishDate}>
+            {new Date(publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </time>
+          {updatedDate && (
+            <>
+              <span aria-hidden="true">&middot;</span>
+              <span>
+                Updated <time datetime={updatedDate}>
+                  {new Date(updatedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </time>
+              </span>
+            </>
+          )}
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="max-w-3xl mx-auto px-4 py-12 sm:py-16">
+      <div class="prose-mbl">
+        <slot />
+      </div>
+    </div>
+  </article>
+
+  <!-- Related Articles -->
+  {relatedArticles.length > 0 && (
+    <section class="bg-stone-50 border-t border-stone-200 py-16">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="font-serif text-2xl font-bold text-slate-900 mb-8">More on Learning Design</h2>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {relatedArticles.map((article) => (
+            <ArticleCard
+              title={article.data.title}
+              description={article.data.description}
+              href={`/learning-design/${article.slug}/`}
+              date={article.data.publishDate}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+</BaseLayout>

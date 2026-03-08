@@ -1,0 +1,188 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Abe Crystal',
+  honorificSuffix: 'PhD',
+  jobTitle: 'Learning Design Researcher',
+  url: 'https://morebetterlabs.com/about/',
+  description: 'Learning design researcher, course platform builder, and educator. PhD in Information Science (Human-Computer Interaction) from UNC-Chapel Hill. AB from Princeton University.',
+  sameAs: [
+    'https://www.ruzuku.com/about/abe-crystal',
+    'https://www.researchgate.net/scientific-contributions/Abe-Crystal-10858663',
+    'https://dblp.org/pid/48/6275.html',
+  ],
+  alumniOf: [
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'University of North Carolina at Chapel Hill',
+      department: 'School of Information and Library Science',
+    },
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'Princeton University',
+    },
+  ],
+  affiliation: [
+    { '@type': 'Organization', name: 'Ruzuku', url: 'https://www.ruzuku.com' },
+    { '@type': 'Organization', name: 'MoreBetterLabs', url: 'https://morebetterlabs.com' },
+    { '@type': 'CollegeOrUniversity', name: 'University of North Carolina at Chapel Hill' },
+    { '@type': 'CollegeOrUniversity', name: 'North Carolina State University' },
+    { '@type': 'CollegeOrUniversity', name: 'University of California, Los Angeles' },
+  ],
+  hasCredential: {
+    '@type': 'EducationalOccupationalCredential',
+    credentialCategory: 'PhD',
+    educationalLevel: 'Doctoral',
+    recognizedBy: {
+      '@type': 'CollegeOrUniversity',
+      name: 'University of North Carolina at Chapel Hill',
+    },
+  },
+  knowsAbout: [
+    'Learning Design',
+    'Human-Computer Interaction',
+    'User Experience Research',
+    'Online Education',
+    'Course Design',
+    'Information Architecture',
+  ],
+};
+---
+
+<BaseLayout
+  title="About Abe Crystal, PhD | MoreBetterLabs"
+  description="Learning design researcher, course platform builder, and educator. PhD in Information Science (HCI) from UNC-Chapel Hill, teaching at UNC SILS, UNC School of Education, NC State, and UCLA."
+  canonical="/about/"
+  schema={[personSchema]}
+>
+  <section class="bg-stone-50 border-b border-stone-200 py-16 sm:py-24">
+    <div class="max-w-3xl mx-auto px-4">
+      <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
+        Abe Crystal, PhD
+      </h1>
+      <p class="text-xl text-slate-500 leading-relaxed">
+        Learning design researcher, course platform builder, and educator.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 sm:py-24">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="prose-mbl">
+        <h2>Background</h2>
+        <p>
+          I've spent my career at the intersection of learning science, technology, and design. My PhD research at
+          <strong>UNC-Chapel Hill's School of Information and Library Science (SILS)</strong> focused on how people
+          organize, access, and use information in educational contexts — work that has directly shaped how I think
+          about online course design.
+        </p>
+        <p>
+          My dissertation, <em>Design Research for Personal Information Management Systems to Support Undergraduate
+          Students</em> (2008), used field research to understand how students actually manage their learning —
+          not how we assume they do. That gap between assumption and reality is what drives everything I build.
+        </p>
+        <p>
+          Before graduate school, I earned my AB in Economics from <strong>Princeton University</strong>.
+        </p>
+
+        <h2>Academic Research</h2>
+        <p>
+          My published research spans human-computer interaction, information architecture, and learning system design.
+          Key publications include:
+        </p>
+        <ul>
+          <li>
+            <strong>"Augmenting Memory for Student Learning"</strong> (ASIST 2006, with Barreau, Greenberg, Sharma, Conway, et al.) —
+            designing context-aware capture systems for biology education. This research directly informed how
+            I think about scaffolding and memory support in online courses.
+          </li>
+          <li>
+            <strong>"Design Research for a Context-Aware Capture System to Support Biology Education"</strong> (DIS 2006) —
+            applying design research methodology to educational technology, bridging lab research and real classroom needs.
+          </li>
+          <li>
+            <strong>"Memex Metadata (M2) for Reflective Learning"</strong> (Dublin Core 2006, with Greenberg, Sharma, et al.) —
+            systems that support reflective learning through structured metadata. The principles here underpin how
+            I design reflection and feedback loops in course platforms.
+          </li>
+          <li>
+            <strong>"Facets Are Fundamental: Rethinking Information Architecture Frameworks"</strong>
+            (<em>Technical Communication</em>, 2007) — how faceted classification helps people navigate
+            complex information. This directly shapes how course content should be structured for different
+            learning paths.
+          </li>
+          <li>
+            <strong>"Task Analysis and Human-Computer Interaction"</strong> (AMCIS 2004, with Ellington) —
+            methodological foundations for understanding how people actually use educational tools, not how
+            designers imagine they will.
+          </li>
+        </ul>
+        <p>
+          Across 13 publications (335+ citations), the through line is the same: understand how people
+          actually learn and manage information, then design systems that support those real behaviors.
+        </p>
+
+        <h2>Teaching</h2>
+        <p>
+          I teach and have taught at several universities, which keeps my learning design thinking grounded
+          in current educational practice:
+        </p>
+        <ul>
+          <li>
+            <strong>UNC School of Education</strong> — seminars on educational innovation and technology-enhanced learning
+          </li>
+          <li>
+            <strong>UNC School of Information and Library Science (SILS)</strong> — information architecture and
+            human-computer interaction
+          </li>
+          <li>
+            <strong>NC State University, DESIGN Research Group</strong> — design research methodology applied to
+            educational systems and user experience
+          </li>
+          <li>
+            <strong>UCLA</strong> — courses connecting learning science with technology design
+          </li>
+        </ul>
+        <p>
+          Teaching at these institutions keeps me honest. When I write about learning design principles, I'm
+          drawing on both published research and direct experience watching students learn (and struggle) in
+          real educational settings.
+        </p>
+
+        <h2>Building Ruzuku</h2>
+        <p>
+          In 2011, I co-founded <a href="https://www.ruzuku.com">Ruzuku</a> — an online course platform
+          built from the ground up on learning design principles. The question that drove us wasn't
+          "how do we help people sell courses?" but "how do we help people <em>teach</em> courses that
+          actually work?"
+        </p>
+        <p>
+          My research on context-aware learning systems, reflective metadata, and information architecture
+          directly shaped Ruzuku's design: step-by-step course progression (not content dumps), built-in
+          discussion for social learning, structured feedback loops, and a focus on completion over consumption.
+        </p>
+        <p>
+          Since launch, Ruzuku has hosted 75,000+ courses serving over 500,000 students — from coaches
+          and wellness practitioners to nonprofits and corporate trainers.
+        </p>
+
+        <h2>Writing</h2>
+        <p>
+          I'm the author of <a href="https://www.amazon.com/Business-Courses-Abe-Crystal/dp/1737374218"
+          rel="noopener noreferrer"><em>The Business of Courses</em></a> (2021) and co-host of the
+          <a href="https://courselab.co/" rel="noopener noreferrer">Course Lab Podcast</a> with
+          Ari Iny. Both are built on the same principle: course creation works best when it's grounded
+          in how people actually learn, not just what's easy to record.
+        </p>
+        <p>
+          This site, MoreBetterLabs, is where I write about learning design for practitioners — the
+          research and principles behind effective online education, translated into language and
+          frameworks that course creators can actually use.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
