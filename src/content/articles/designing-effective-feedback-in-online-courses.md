@@ -77,7 +77,7 @@ Our research on reflective learning (Greenberg, Crystal, et al., 2006) demonstra
 
 Self-assessment is a form of feedback where the learner evaluates their own understanding. The most effective self-assessment designs use rubrics or checklists: "Before submitting, rate your work on these five criteria." This creates metacognitive awareness — students learn to monitor their own learning, which is a skill that transfers far beyond any single course.
 
-At NC State's DESIGN Research group, we applied iterative design research methodology to educational systems. The iteration cycle itself — design, test, reflect, revise — is a feedback loop. Teaching students to internalize this cycle (create, evaluate, improve) is one of the most valuable things a course can do.
+At NC State's College of Design, we applied iterative design research methodology to educational systems. The iteration cycle itself — design, test, reflect, revise — is a feedback loop. Teaching students to internalize this cycle (create, evaluate, improve) is one of the most valuable things a course can do.
 
 ### Automated Feedback
 

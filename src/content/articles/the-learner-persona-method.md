@@ -106,7 +106,7 @@ Review your notes for patterns across the four dimensions. You're not looking fo
 - Frequently asked questions
 - Shared needs around pacing, format, and support
 
-In my experience teaching at UNC's School of Education and NC State's DESIGN Research group, the gap between assumed learner needs and actual learner needs is almost always significant. Instructors who design from assumption build courses that reflect their own learning preferences. Instructors who design from research — even informal research like 5-10 discovery calls — build courses that match their students.
+In my experience teaching at UNC's School of Education and NC State's College of Design, the gap between assumed learner needs and actual learner needs is almost always significant. Instructors who design from assumption build courses that reflect their own learning preferences. Instructors who design from research — even informal research like 5-10 discovery calls — build courses that match their students.
 
 If you haven't done research calls yet, start with 5 conversations. Ask open-ended questions: "Tell me about your experience with [topic]." "What have you tried so far?" "What's been the hardest part?" "If this course could solve one thing for you, what would it be?" These conversations are more valuable than any avatar worksheet.
 

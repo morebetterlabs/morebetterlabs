@@ -83,7 +83,7 @@ For course creators, the same principle applies: offering a free workshop or min
 
 Here's the insight that connects pricing psychology back to learning design: the price you set affects the learning outcomes your students achieve. This isn't a side effect — it's a core design decision.
 
-At UCLA and in my work at NC State's DESIGN Research group, I've explored how design decisions that seem peripheral to content — interface layout, interaction patterns, environmental cues — fundamentally shape the learning experience. Pricing is one of these decisions. It sets expectations, signals seriousness, creates commitment, and influences the effort students invest.
+In my work at NC State's College of Design, I've explored how design decisions that seem peripheral to content — interface layout, interaction patterns, environmental cues — fundamentally shape the learning experience. Pricing is one of these decisions. It sets expectations, signals seriousness, creates commitment, and influences the effort students invest.
 
 A well-priced course:
 - **Creates commitment** through investment (sunk cost motivation)

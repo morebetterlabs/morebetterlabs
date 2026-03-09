@@ -89,7 +89,7 @@ Most online courses deliver abstract conceptualization (theory, frameworks, mode
 3. **Abstract conceptualization**: Introduce the framework or principle
 4. **Active experimentation**: "Now apply this to your own [course/business/practice]"
 
-In my work at NC State's DESIGN Research group, we applied design research methodology to educational system design — iterating through cycles of design, implementation, observation, and revision. The methodology itself mirrors Kolb's cycle: understanding comes through doing, reflecting, theorizing, and doing again.
+In my work at NC State's College of Design, we applied design research methodology to educational system design — iterating through cycles of design, implementation, observation, and revision. The methodology itself mirrors Kolb's cycle: understanding comes through doing, reflecting, theorizing, and doing again.
 
 The practical implication: every lesson should include an activity where the student applies the material to their own real situation. Not a hypothetical. Not a quiz. A real application they can use immediately.
 

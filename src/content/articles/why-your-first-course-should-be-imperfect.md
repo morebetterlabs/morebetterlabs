@@ -46,7 +46,7 @@ My PhD research at UNC-Chapel Hill was in design research methodology — a syst
 
 This is the same methodology that powers modern product design, software development, and service design. It's called different things in different fields — iterative design, design thinking, lean methodology, action research — but the core principle is the same: **you learn more from one week of real use than from six months of planning.**
 
-When I taught design research at NC State's DESIGN Research group, the students who produced the best work were the ones who tested early and often. The students who tried to perfect their designs before testing invariably built beautiful solutions to the wrong problems.
+When I taught design research at NC State's College of Design, the students who produced the best work were the ones who tested early and often. The students who tried to perfect their designs before testing invariably built beautiful solutions to the wrong problems.
 
 Course design follows the same pattern. The course you *think* your students need and the course they *actually* need are different — and you can't discover the difference without running the course.
 
