@@ -32,6 +32,78 @@ const breadcrumbs = [
 // Estimate word count from rendered content (fallback to 1500)
 const wordCount = 1500;
 
+// Citation data per article (structured references for JSON-LD)
+const citationsBySlug: Record<string, Array<{ name: string; author?: string; datePublished?: string; publisher?: string; url?: string }>> = {
+  'the-two-traps-that-kill-online-courses': [
+    { name: 'Active learning increases student performance in science, engineering, and mathematics', author: 'Scott Freeman, Sarah L. Eddy, Miles McDonough et al.', datePublished: '2014', publisher: 'Proceedings of the National Academy of Sciences' },
+    { name: 'The expertise reversal effect', author: 'Slava Kalyuga, Paul Ayres, Paul Chandler, John Sweller', datePublished: '2003', publisher: 'Educational Psychologist' },
+    { name: 'Cognitive load during problem solving: Effects on learning', author: 'John Sweller', datePublished: '1988', publisher: 'Cognitive Science' },
+    { name: 'Understanding by Design', author: 'Grant Wiggins, Jay McTighe', datePublished: '2005', publisher: 'ASCD' },
+  ],
+  'why-online-course-completion-rates-are-low': [
+    { name: 'The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior', author: 'Edward L. Deci, Richard M. Ryan', datePublished: '2000', publisher: 'Psychological Inquiry' },
+    { name: 'Active learning increases student performance in science, engineering, and mathematics', author: 'Scott Freeman, Sarah L. Eddy, Miles McDonough et al.', datePublished: '2014', publisher: 'Proceedings of the National Academy of Sciences' },
+    { name: 'The power of feedback', author: 'John Hattie, Helen Timperley', datePublished: '2007', publisher: 'Review of Educational Research' },
+    { name: 'Massive open online course completion rates revisited', author: 'Katy Jordan', datePublished: '2015', publisher: 'International Review of Research in Open and Distributed Learning' },
+    { name: 'A brief social-belonging intervention improves academic and health outcomes of minority students', author: 'Gregory M. Walton, Geoffrey L. Cohen', datePublished: '2011', publisher: 'Science' },
+    { name: 'Building a practically useful theory of goal setting and task motivation', author: 'Edwin A. Locke, Gary P. Latham', datePublished: '2002', publisher: 'American Psychologist' },
+  ],
+  'the-science-of-cohort-based-learning': [
+    { name: 'Mind in society: The development of higher psychological processes', author: 'Lev S. Vygotsky', datePublished: '1978', publisher: 'Harvard University Press' },
+    { name: 'Critical inquiry in a text-based environment: Computer conferencing in higher education', author: 'D. Randy Garrison, Terry Anderson, Walter Archer', datePublished: '2000', publisher: 'The Internet and Higher Education' },
+    { name: 'Memory and metamemory considerations in the training of human beings', author: 'Robert A. Bjork', datePublished: '1994' },
+    { name: 'Improving students\' learning with effective learning techniques', author: 'John Dunlosky, Katherine A. Rawson, Elizabeth J. Marsh et al.', datePublished: '2013', publisher: 'Psychological Science in the Public Interest' },
+    { name: 'Commitment devices: Using initiatives to change behavior', author: 'Todd Rogers, Katherine L. Milkman, Kevin G. Volpp', datePublished: '2014', publisher: 'JAMA' },
+  ],
+  'adult-learning-principles-for-course-creators': [
+    { name: 'The modern practice of adult education: From pedagogy to andragogy', author: 'Malcolm S. Knowles', datePublished: '1980', publisher: 'Cambridge Adult Education' },
+    { name: 'Experiential learning: Experience as the source of learning and development', author: 'David A. Kolb', datePublished: '1984', publisher: 'Prentice-Hall' },
+    { name: 'Andragogy and self-directed learning: Pillars of adult learning theory', author: 'Sharan B. Merriam', datePublished: '2001', publisher: 'New Directions for Adult and Continuing Education' },
+    { name: 'Understanding by Design', author: 'Grant Wiggins, Jay McTighe', datePublished: '2005', publisher: 'ASCD' },
+    { name: 'Improving students\' learning with effective learning techniques', author: 'John Dunlosky, Katherine A. Rawson, Elizabeth J. Marsh et al.', datePublished: '2013', publisher: 'Psychological Science in the Public Interest' },
+  ],
+  'the-minimum-viable-course': [
+    { name: 'Cognitive load during problem solving: Effects on learning', author: 'John Sweller', datePublished: '1988', publisher: 'Cognitive Science' },
+    { name: 'The magical number seven, plus or minus two', author: 'George A. Miller', datePublished: '1956', publisher: 'Psychological Review' },
+    { name: 'Memory and metamemory considerations in the training of human beings', author: 'Robert A. Bjork', datePublished: '1994' },
+  ],
+  'how-to-define-measurable-outcomes': [
+    { name: 'Understanding by Design', author: 'Grant Wiggins, Jay McTighe', datePublished: '2005', publisher: 'ASCD' },
+    { name: 'The modern practice of adult education: From pedagogy to andragogy', author: 'Malcolm S. Knowles', datePublished: '1980', publisher: 'Cambridge Adult Education' },
+  ],
+  'the-learner-persona-method': [
+    { name: 'The modern practice of adult education: From pedagogy to andragogy', author: 'Malcolm S. Knowles', datePublished: '1980', publisher: 'Cambridge Adult Education' },
+  ],
+  'why-your-first-course-should-be-imperfect': [
+    { name: 'Prospect theory: An analysis of decision under risk', author: 'Daniel Kahneman, Amos Tversky', datePublished: '1979', publisher: 'Econometrica' },
+    { name: 'Assessment and classroom learning', author: 'Paul Black, Dylan Wiliam', datePublished: '1998', publisher: 'Assessment in Education' },
+  ],
+  'inclusive-course-design': [
+    { name: 'Universal design for learning: Theory and practice', author: 'Anne Meyer, David H. Rose, David Gordon', datePublished: '2014', publisher: 'CAST Professional Publishing' },
+    { name: 'A review of research on universal design educational models', author: 'Kavita Rao, Min Wook Ok, Brian R. Bryant', datePublished: '2014', publisher: 'Remedial and Special Education' },
+    { name: 'Cognitive load during problem solving: Effects on learning', author: 'John Sweller', datePublished: '1988', publisher: 'Cognitive Science' },
+    { name: 'Mental representations: A dual coding approach', author: 'Allan Paivio', datePublished: '1986', publisher: 'Oxford University Press' },
+  ],
+  'designing-effective-feedback-in-online-courses': [
+    { name: 'The power of feedback', author: 'John Hattie, Helen Timperley', datePublished: '2007', publisher: 'Review of Educational Research' },
+    { name: 'Assessment and classroom learning', author: 'Paul Black, Dylan Wiliam', datePublished: '1998', publisher: 'Assessment in Education' },
+  ],
+  'community-as-pedagogy': [
+    { name: 'Communities of practice: Learning, meaning, and identity', author: 'Etienne Wenger', datePublished: '1998', publisher: 'Cambridge University Press' },
+    { name: 'Critical inquiry in a text-based environment: Computer conferencing in higher education', author: 'D. Randy Garrison, Terry Anderson, Walter Archer', datePublished: '2000', publisher: 'The Internet and Higher Education' },
+    { name: 'Mind in society: The development of higher psychological processes', author: 'Lev S. Vygotsky', datePublished: '1978', publisher: 'Harvard University Press' },
+  ],
+  'the-psychology-of-course-pricing': [
+    { name: 'Prospect theory: An analysis of decision under risk', author: 'Daniel Kahneman, Amos Tversky', datePublished: '1979', publisher: 'Econometrica' },
+    { name: 'Predictably Irrational', author: 'Dan Ariely', datePublished: '2008', publisher: 'HarperCollins' },
+  ],
+  'designing-credible-certification-programs': [
+    { name: 'Standards for Educational and Psychological Testing', author: 'American Educational Research Association, American Psychological Association, National Council on Measurement in Education', datePublished: '2014' },
+  ],
+};
+
+const citations = citationsBySlug[slug] || [];
+
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -72,6 +144,16 @@ const articleSchema = {
     name: 'Learning Design',
     sameAs: 'https://en.wikipedia.org/wiki/Instructional_design',
   },
+  ...(citations.length > 0 && {
+    citation: citations.map((c) => ({
+      '@type': 'CreativeWork',
+      name: c.name,
+      ...(c.author && { author: { '@type': 'Person', name: c.author } }),
+      ...(c.datePublished && { datePublished: c.datePublished }),
+      ...(c.publisher && { publisher: { '@type': 'Organization', name: c.publisher } }),
+      ...(c.url && { url: c.url }),
+    })),
+  }),
 };
 
 const breadcrumbSchema = {
