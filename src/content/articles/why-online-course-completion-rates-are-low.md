@@ -25,7 +25,7 @@ But that framing misses the real story. The problem isn't the medium. It's the d
 
 The same body of learning science that explains why most online courses fail also tells us exactly what to do differently. And the interventions aren't exotic — they're well-established principles that most course creators simply aren't applying.
 
-## Why People Don't Finish
+## Why Don't People Finish Online Courses?
 
 Understanding low completion requires understanding what happens after someone enrolls.
 
@@ -37,7 +37,7 @@ Understanding low completion requires understanding what happens after someone e
 
 In my research on personal information management systems for students (Crystal, 2008), I studied how undergraduates actually navigate complex information environments. The consistent finding: people don't fail because of insufficient content. They fail because of insufficient structure. The information is there; the cognitive scaffolding to process it is not.
 
-## What the Research Says Works
+## What Does the Research Say Works?
 
 The interventions that actually improve completion share a common thread: they add structure, social connection, and feedback to what would otherwise be a solo content-consumption experience.
 
@@ -87,7 +87,7 @@ Locke and Latham's goal-setting theory (2002) establishes that clear, specific g
 
 Progress bars, completion checkmarks, and milestone celebrations seem small. They aren't. They provide the competence feedback that Self-Determination Theory identifies as essential for sustained motivation.
 
-## The Design Gap
+## What Is the Design Gap in Online Course Platforms?
 
 Here's the frustrating part: none of this is new research. These principles — active learning, structured pacing, feedback, social connection, progress visibility — are well-established in learning science. They've been validated across hundreds of studies and thousands of classrooms.
 
@@ -97,7 +97,7 @@ This is exactly the gap I set out to close when building Ruzuku. My research at 
 
 Ruzuku's [step-by-step course flow, built-in discussions, and structured activities](https://www.ruzuku.com/features) aren't feature additions to a content management system. They're the core architecture — designed to embody the research on what makes learning work.
 
-## The Accountability Gap
+## What Is the Accountability Gap?
 
 The five design principles above address the learning experience itself. But there's a sixth factor that operates outside the content: **accountability**.
 

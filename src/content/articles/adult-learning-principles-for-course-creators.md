@@ -26,7 +26,7 @@ The first question should be: how do adults actually learn?
 
 This isn't an abstract question. The answer has direct, practical implications for every design decision you'll make — from how you structure your lessons to how you frame your exercises to how you price your course.
 
-## Adults Are Not Large Children
+## How Do Adults Learn Differently?
 
 Malcolm Knowles formalized the distinction between how children learn (pedagogy) and how adults learn (andragogy) in a framework that remains foundational sixty years later (Knowles, 1980). His six principles of adult learning:
 
@@ -42,7 +42,7 @@ Malcolm Knowles formalized the distinction between how children learn (pedagogy)
 
 **6. Motivation.** While external motivators (credentials, career advancement) matter, the most potent motivators for adult learners are internal: self-esteem, quality of life, personal satisfaction. The best courses tap into intrinsic motivation — the desire to get better at something that matters to the learner. Understanding these motivations is one of the four dimensions of a [learner persona](/learning-design/the-learner-persona-method/).
 
-## What This Means for Course Design
+## How Should You Design Courses for Adult Learners?
 
 Each of Knowles' principles translates directly into design decisions.
 
@@ -64,7 +64,7 @@ This kind of prompt produces elaborative processing — the student isn't just e
 
 Our research on reflective learning at UNC-Chapel Hill (Greenberg, Crystal, et al., 2006) explored how structured reflection metadata helps learners process and consolidate experiences. The Memex Metadata system we developed used structured prompts to guide reflection — not open-ended journaling, but specific questions tied to what the learner had just encountered. The finding was clear: structured reflection outperforms both unstructured reflection and no reflection.
 
-### Give Autonomy Within Structure
+### What Is Guided Autonomy in Course Design?
 
 Self-directed learning theory (Merriam, 2001) establishes that adult learners need to feel ownership over their learning process. But "self-directed" doesn't mean "unstructured." It means the learner participates in decisions about what, how, and when they learn.
 
@@ -105,7 +105,7 @@ I wrote about this extensively in [*The Business of Courses*](https://www.amazon
 
 For practical frameworks on course design, pricing, and launch strategy grounded in these principles, the [free chapter summaries on Ruzuku](https://www.ruzuku.com/learn/book) cover the key insights.
 
-## Defining What Success Looks Like: Know, Feel, Do
+## What Is the Know-Feel-Do Framework?
 
 Before applying these principles, you need clarity on what you're designing *toward*. In my World Class Courses workshop, I teach a framework adapted from Yale's instructional design tradition: **Know, Feel, Do**.
 
@@ -125,7 +125,7 @@ To sharpen your outcomes, try this visualization:
 
 The 3-5 year timeframe is deliberate. It forces you to identify durable outcomes — not what students will remember from Module 3, but what will still be shaping their practice years later. This shifts the designer's thinking from "what content do I need to deliver?" to "what lasting change am I creating?"
 
-### Making Outcomes Measurable
+### How Do You Make Course Outcomes Measurable?
 
 Once you've envisioned success, make it verifiable: "How will we know whether our students have achieved the outcomes — or not?"
 

@@ -24,7 +24,7 @@ After a decade of building [Ruzuku](https://www.ruzuku.com) and watching thousan
 
 I call them the two traps — and nearly every struggling course creator is stuck in at least one.
 
-## Trap 1: The Instructionism Trap
+## What Is the Instructionism Trap?
 
 The Instructionism Trap is the default mode of course creation: you know something, so you tell people about it. You record lectures. You create slide decks. You write long explanations. The student's job is to watch, read, and absorb.
 
@@ -46,13 +46,13 @@ The Curse of Knowledge manifests in specific ways:
 
 In my seminars at UNC's School of Education, I see this consistently: experienced practitioners who are brilliant at their craft struggle to break their expertise into learnable steps. The expertise that makes them great practitioners is the same expertise that makes course design unintuitive.
 
-### How to Escape Trap 1
+### How Do You Escape the Instructionism Trap?
 
 Design for *doing*, not for *knowing*. Every piece of content in your course should connect to an action the student takes. Not "watch this video about pricing strategies" but "apply this pricing framework to your course and share your result."
 
 This doesn't mean eliminating content — it means subordinating content to activity. Content exists to support the doing, not the other way around. My research on designing context-aware capture systems for education (Crystal, 2006) explored this principle directly: educational technology should support learning *in context*, not deliver content in isolation.
 
-## Trap 2: The Aboutness Trap
+## What Is the Aboutness Trap?
 
 The Aboutness Trap is subtler. You've designed a course "about" a topic — about marketing, about meditation, about course creation. It's organized by subject matter. Module 1: Introduction to X. Module 2: Fundamentals of Y. Module 3: Advanced Z.
 
@@ -74,7 +74,7 @@ Sweller's Cognitive Load Theory (1988) explains why this fails. Working memory h
 
 Overdosing isn't about having too much content in total. It's about presenting too much at once, without spacing, without practice, without the cognitive breathing room that lets new information consolidate into long-term memory.
 
-## The Escape: Outcome-Focused Design with Dual Minimalism
+## How Do You Escape Both Traps?
 
 Both traps share a root cause: starting with what you want to *teach* instead of what the student needs to *achieve*. The escape is what I call **Dual Minimalism**:
 
@@ -91,7 +91,7 @@ This approach aligns with Wiggins and McTighe's Understanding by Design framewor
 
 For a practical methodology for defining your course outcomes, see [How to Define Measurable Outcomes for Your Online Course](/learning-design/how-to-define-measurable-outcomes/).
 
-## Diagnosing Your Course
+## How Do You Diagnose Which Trap You're In?
 
 If your course is struggling, run this diagnostic:
 

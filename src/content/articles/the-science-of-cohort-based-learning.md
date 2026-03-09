@@ -23,7 +23,7 @@ Cohort-based courses — where a group of students moves through material togeth
 
 This isn't a trend or a marketing angle. It's backed by decades of research in learning science.
 
-## Learning Is Inherently Social
+## Why Is Learning Inherently Social?
 
 The most robust finding in learning science is that learning is a social process. Vygotsky's social constructivist framework (1978) established that higher-order thinking develops through interaction — not in isolation. His concept of the Zone of Proximal Development describes the space between what a learner can do alone and what they can do with support from peers or instructors.
 
@@ -31,7 +31,7 @@ Cohort-based courses operate squarely in this zone. When students encounter diff
 
 This isn't just theory. In my own research on educational systems at UNC-Chapel Hill, I studied how students actually interact with learning materials and each other. Our work on augmenting memory for student learning (Crystal, Barreau, Greenberg, Sharma, Conway, et al., 2006) showed that the context in which learning happens — who's around, what's being discussed, what just happened — is inseparable from the learning itself. Strip away the social context (as self-paced courses do), and you strip away a critical layer of cognitive support.
 
-## The Community of Inquiry Framework
+## What Is the Community of Inquiry Framework?
 
 Garrison, Anderson, and Archer's Community of Inquiry (CoI) framework (2000) provides a useful model for understanding why cohorts work. The framework identifies three elements that must be present for deep learning:
 
@@ -43,7 +43,7 @@ Self-paced courses can deliver cognitive presence (through good content) and tea
 
 Cohort models deliver all three by default.
 
-## Shared Struggle and Desirable Difficulties
+## What Are Desirable Difficulties in Learning?
 
 Robert Bjork's research on "desirable difficulties" (1994) reveals a counterintuitive finding: learning conditions that make initial acquisition harder often produce better long-term retention and transfer. Spacing, interleaving, and retrieval practice all create short-term difficulty that strengthens long-term learning.
 
@@ -55,7 +55,7 @@ Cohort-based courses naturally introduce desirable difficulties that self-paced 
 
 The self-paced alternative (watch at your own speed, skip what seems familiar) optimizes for comfort, not learning. Cohorts introduce productive friction.
 
-## Accountability Without Surveillance
+## How Does Accountability Work Without Surveillance?
 
 One of the most common explanations for cohort effectiveness is "accountability," but the mechanism is more interesting than simple social pressure.
 
@@ -65,7 +65,7 @@ Research on commitment mechanisms (Rogers, Milkman, & Volpp, 2014) shows that so
 
 In the courses I've observed through [Ruzuku](https://www.ruzuku.com/use-cases/cohort-courses) — where thousands of instructors have run cohort programs — the pattern is consistent: students who participate in cohort discussions and live sessions complete at dramatically higher rates than those who treat the same material as self-paced.
 
-## Peer Learning as Cognitive Elaboration
+## How Does Peer Learning Improve Understanding?
 
 When students explain concepts to each other, they engage in what learning scientists call "elaborative interrogation" — generating explanations for why something is true. This is one of the most effective learning strategies identified in Dunlosky et al.'s comprehensive review (2013).
 
@@ -73,7 +73,7 @@ Self-paced courses provide no natural opportunity for this. Cohort-based courses
 
 Our research on reflective learning systems (Greenberg, Crystal, Sharma, et al., 2006) explored how structured metadata and reflection prompts help learners process and retain information. The finding was clear: learning systems that prompt active reflection — not just passive consumption — produce measurably better outcomes. Cohort structures are the most natural way to create these reflection opportunities at scale.
 
-## Practical Design Implications
+## How Should You Design a Cohort-Based Course?
 
 If you're designing a cohort-based course, the research suggests several design principles:
 

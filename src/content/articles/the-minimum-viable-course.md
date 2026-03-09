@@ -26,7 +26,7 @@ The diagnosis is usually the same: too much content.
 
 Not too much *bad* content. Too much content, period. The course creator's expertise and generosity — their desire to give students everything they need — becomes the thing that overwhelms students and drives them away.
 
-## The Overdosing Problem
+## What Is Course Overdosing?
 
 Course creator Jen Louden calls this "overdosing" — loading a course with more content and activities than students can realistically process. It's the content equivalent of prescribing a medication at ten times the effective dose and wondering why the patient isn't getting better.
 
@@ -36,7 +36,7 @@ The research on why this fails is unambiguous. Sweller's Cognitive Load Theory (
 
 This isn't a willpower problem or a motivation problem. It's a *capacity* problem. Students who drop out of overloaded courses aren't lazy. Their cognitive systems are doing exactly what they're designed to do: shutting down when overwhelmed.
 
-## Dual Minimalism: The Antidote
+## What Is Dual Minimalism?
 
 The solution isn't to dumb down your course. It's to apply what I call **Dual Minimalism**:
 
@@ -79,7 +79,7 @@ Each question tightens the frame: 4-6 weeks → first month → first milestone 
 
 For a practical tool to structure your scoped course, Ruzuku's [course outline generator](https://www.ruzuku.com/tools/course-outline) helps you map outcomes to steps. And for a framework on defining those outcomes rigorously, see [How to Define Measurable Outcomes for Your Online Course](/learning-design/how-to-define-measurable-outcomes/).
 
-## The Iterative Path
+## Why Is Iterative Design Important for Courses?
 
 Dual Minimalism works hand-in-hand with iterative design. In my World Class Courses workshop, I tell participants:
 
@@ -101,7 +101,7 @@ This is design research methodology — the same iterative approach I used in my
 
 For a deeper dive into this iterative approach, see [Why Your First Course Should Be Imperfect](/learning-design/why-your-first-course-should-be-imperfect/).
 
-## The Paradox of Less
+## Why Does Less Content Lead to Better Learning?
 
 The counterintuitive truth: courses with less content often produce *more* learning. When students aren't overwhelmed, they engage more deeply with each piece of content. When the scope is focused, every activity feels relevant. When the pace is manageable, students actually complete the work — and completion is where transformation happens.
 
