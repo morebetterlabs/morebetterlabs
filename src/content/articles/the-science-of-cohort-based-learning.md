@@ -85,6 +85,8 @@ If you're designing a cohort-based course, the research suggests several design 
 
 **Synchronous touchpoints anchor the experience.** Even in primarily asynchronous cohorts, periodic live sessions create social presence and shared identity. They don't need to be long — a 30-minute weekly check-in can anchor an entire week of asynchronous work.
 
+The platforms that support cohort design vary widely in how they handle these principles. Community-first platforms like Circle and Mighty Networks position themselves around discussion and group identity, but differ significantly in pacing controls, fee structures, and how cohort logistics are actually implemented in practice — for current evaluations, see Ruzuku's analyses of [Circle](https://www.ruzuku.com/learn/articles/is-circle-any-good) and [Mighty Networks](https://www.ruzuku.com/learn/articles/is-mighty-networks-any-good), both of which cover the gaps between marketing positioning and actual feature delivery (including the 2025 Mighty Networks plan rebranding).
+
 For a practical guide to applying these principles, see Ruzuku's [guide to cohort-based courses](https://www.ruzuku.com/use-cases/cohort-courses), which translates this research into specific design patterns for course creators.
 
 ## The Completion Question
