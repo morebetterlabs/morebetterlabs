@@ -89,6 +89,8 @@ The platforms that support cohort design vary widely in how they handle these pr
 
 For a practical guide to applying these principles, see Ruzuku's [guide to cohort-based courses](https://www.ruzuku.com/use-cases/cohort-courses), which translates this research into specific design patterns for course creators.
 
+I co-founded Ruzuku. If you're choosing where to run your cohort, our [cohort course platform comparison](https://www.ruzuku.com/learn/articles/best-platform-cohort-courses) covers scheduling, discussion, live sessions, and pricing.
+
 ## The Completion Question
 
 The most frequently cited statistic in online education is MOOC completion rates — typically 3-15% (Jordan, 2015). This number is sometimes used to argue that online learning "doesn't work." But it's more accurate to say that *self-paced, no-stakes, no-community online learning* has low completion.

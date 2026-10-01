@@ -117,6 +117,8 @@ The platform matters here. Tools designed for content delivery (watch video, dow
 
 This is why [Ruzuku's architecture](https://www.ruzuku.com/how-it-works) puts discussion and peer interaction at the center of every course step, not in a separate "community" tab. When discussion is integrated into the learning flow, participation happens naturally. When it's separated, it becomes optional — and optional means empty.
 
+I co-founded Ruzuku. If you're choosing a platform for a group coaching program, our [comparison of course platforms for coaches](https://www.ruzuku.com/learn/articles/best-platform-coaches) covers course delivery, community features, and live sessions.
+
 ## Beyond the Course: Membership Communities
 
 The Communities of Practice framework suggests that the most valuable learning communities persist beyond any single course. Members who complete a course together have shared language, shared experiences, and shared commitment — the foundations of an ongoing community of practice.
